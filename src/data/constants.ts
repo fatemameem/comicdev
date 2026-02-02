@@ -30,17 +30,17 @@ export const EDUCATION: EducationItem[] = [
 export const EXPERIENCE: ExperienceItem[] = [
   {
     id: 1,
-    role: "Senior Frontend Engineer",
-    company: "Creative Cloud Corp",
-    period: "2023 - Present",
+    role: "Frontend Developer",
+    company: "Bevy Commerce",
+    period: "JUN 2021 - DEC 2021",
     description: "Leading the UI redesign initiative. Improved performance by 40% through code splitting and asset optimization. Mentoring junior developers.",
-    skills: ["React", "TypeScript", "Next.js", "Performance"]
+    skills: ["React", "Shopify", "Next.js", "Performance"]
   },
   {
     id: 2,
-    role: "Web Developer",
-    company: "Pixel Perfect Agency",
-    period: "2022 - 2023",
+    role: "Web Developer (Volunteer)",
+    company: "TECHNEST Canada",
+    period: "SEP 2024 - PRESENT",
     description: "Built responsive websites for 20+ clients. Collaborated closely with designers to implement pixel-perfect animations.",
     skills: ["Vue.js", "SCSS", "GSAP", "Accessibility"]
   }
