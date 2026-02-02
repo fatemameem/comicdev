@@ -26,9 +26,9 @@ export const ComicPanel: React.FC<ComicPanelProps> = ({
         <div className="border-b-2 border-comic-black dark:border-comic-gray bg-comic-yellow text-comic-black px-4 py-1 flex items-center justify-between">
           <span className="font-comic font-bold text-lg tracking-wide uppercase">{title}</span>
           <div className="flex gap-1">
-             <div className="w-2 h-2 rounded-full bg-comic-black"></div>
-             <div className="w-2 h-2 rounded-full bg-comic-black opacity-50"></div>
-             <div className="w-2 h-2 rounded-full bg-comic-black opacity-25"></div>
+            <div className="w-2 h-2 rounded-full bg-comic-black"></div>
+            <div className="w-2 h-2 rounded-full bg-comic-black opacity-50"></div>
+            <div className="w-2 h-2 rounded-full bg-comic-black opacity-25"></div>
           </div>
         </div>
       )}

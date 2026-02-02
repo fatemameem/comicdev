@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footprints } from './ui/Doodles';
+// import { Footprints } from './ui/Doodles';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-comic-black dark:bg-[#050505] text-white py-12 relative overflow-hidden transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 text-center space-y-6 relative z-10">
-        <Footprints className="text-gray-600 dark:text-gray-800 opacity-20 justify-center mb-8" />
+        {/* <Footprints className="text-gray-600 dark:text-comic-yellow opacity-20 justify-center mb-8" /> */}
         
         <p className="font-comic text-2xl">Thanks for reading!</p>
         <p className="font-body text-gray-400 dark:text-gray-500 text-sm">

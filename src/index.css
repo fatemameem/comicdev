@@ -63,6 +63,13 @@
   background: #FFD400;
 }
 
+/* #education{
+  background-image: url('/snoopy/originn-bg.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
 /* body {
   margin: 0;
   display: flex;

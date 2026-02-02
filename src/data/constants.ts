@@ -13,16 +13,16 @@ export const NAV_ITEMS: NavItem[] = [
 export const EDUCATION: EducationItem[] = [
   {
     id: 1,
-    degree: "B.S. Computer Science",
-    school: "University of Tech Arts",
-    year: "2018 - 2022",
+    degree: "B.Sc. Computer Science and Engineering",
+    school: "BRAC University",
+    year: "2017 - 2021",
     details: "Focus on Human-Computer Interaction & Web Technologies. Graduated Summa Cum Laude."
   },
   {
     id: 2,
-    degree: "Full Stack Certification",
-    school: "DevBootcamp Global",
-    year: "2021",
+    degree: "M.Engg. Information Systems Security",
+    school: "Concordia University",
+    year: "2023 - 2024",
     details: "Intensive 12-week program covering React, Node.js, and Cloud Infrastructure."
   }
 ];
