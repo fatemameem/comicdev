@@ -173,6 +173,8 @@ export default {
       "contact.twitter": "Twitter",
       "contact.linkedin": "LinkedIn",
       "contact.mail": "Courriel",
+      "contact.messageSuccess": "Message envoyé avec succès ! 🎉",
+      "contact.messageError": "Quelque chose s'est mal passé ! Veuillez réessayer.",
 
       // Footer Section
       "footer.thanksForReading": "Merci de votre lecture !",
