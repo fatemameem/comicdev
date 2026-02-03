@@ -6,12 +6,11 @@ import { ScribbleDivider } from '../ui/Doodles';
 export const Education: React.FC = () => {
   return (
     <section id="education" className="py-16 px-4 md:px-8 bg-comic-paper dark:bg-comic-dark-bg relative">
-      <div className="max-w-4xl mx-auto space-y-12 ">
+      <div className="max-w-4xl mx-auto space-y-12 relative">
         <div className="text-center space-y-4">
           <h2 className="font-comic font-bold text-4xl text-comic-black dark:text-comic-dark-text">Chapter 1: The Origin Story</h2>
           <ScribbleDivider className="w-48 mx-auto text-comic-yellow" />
         </div>
-
         <div className="grid md:grid-cols-2 gap-8">
           {EDUCATION.map((edu, index) => (
             <div key={edu.id} className={`${index % 2 === 1 ? 'md:mb-24' : 'md:mt-24'}`}>
@@ -26,11 +25,9 @@ export const Education: React.FC = () => {
             </div>
           ))}
         </div>
-        
         {/* <Footprints className="py-8 text-comic-black dark:text-comic-yellow" /> */}
+        <img src="/snoopy/originn-bg.png"  alt="Snoopy Background" className="hidden md:block absolute w-52 h-40 -bottom-20 right-0 opacity-90 z-0" />
       </div>
-      <img src="/snoopy/originn-bg.png"  alt="Snoopy Background" className="hidden absolute max-h-screen w-full top-10 left-0 opacity-90 dark:opacity-5 z-0" />
-      <img src="/snoopy/originn-bg.png"  alt="Snoopy Background" className="hidden md:block absolute w-52 h-40 bottom-0 right-5 opacity-90 z-0" />
     </section>
   );
 };

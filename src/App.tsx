@@ -5,6 +5,8 @@ import { Hero } from './components/sections/Hero'
 import { Education } from './components/sections/Education'
 import { Experience } from './components/sections/Experience'
 import { Projects } from './components/sections/Projects'
+import { Voluntary } from './components/sections/Volunteer'
+import { Contact } from './components/sections/Contact'
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
         <Education />
         <Experience />
         <Projects/>
+        <Voluntary/>
+        <Contact/>
       </main>
       <Footer/>
     </div>

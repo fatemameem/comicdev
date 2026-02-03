@@ -74,7 +74,7 @@ export const Projects: React.FC = () => {
 
   return (
     <section id="projects" className="py-20 px-4 md:px-8 bg-comic-paper dark:bg-comic-dark-bg bg-size-[24px_24px] text-comic-black dark:text-comic-dark-text">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-comic font-bold text-5xl mb-4 bg-white dark:bg-comic-dark-paper inline-block px-4 border-2 border-comic-black dark:border-comic-gray shadow-comic dark:shadow-comic-dark transform -rotate-1 text-comic-black dark:text-white">
             Featured Issues
