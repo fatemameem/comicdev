@@ -167,6 +167,8 @@ export default {
       "period.sep2024Present": "SEP 2024 - PRÉSENT",
       "period.2017-2021": "2017 - 2021",
       "period.2023-2024": "2023 - 2024",
+      "period.2023-2025": "2023 - 2025",
+      "period.2024Present": "2024 - PRÉSENT",
 
       // Hero Section
       "hero.welcomeMessage": "Salut ! Bienvenue sur mon portfolio.",

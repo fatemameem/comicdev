@@ -46,6 +46,33 @@ export const EXPERIENCE: ExperienceItem[] = [
   }
 ];
 
+export const ADDITIONAL_EXPERIENCE: ExperienceItem[] = [
+  {
+    id: 1,
+    role: "additionalExperience.role.customerService",
+    company: "additionalExperience.company.ioSolutions",
+    period: "period.2023-2025",
+    description: "additionalExperience.desc.ioSolutions",
+    skills: ["Customer Service", "Communication", "Multitasking", "Client Relations"]
+  },
+  {
+    id: 2,
+    role: "additionalExperience.role.gradAmbassador",
+    company: "additionalExperience.company.gradStudies",
+    period: "period.2024Present",
+    description: "additionalExperience.desc.gradAmbassador",
+    skills: ["Academic Outreach", "Student Support", "Communication", "Leadership"]
+  },
+  {
+    id: 3,
+    role: "additionalExperience.role.examInvigilator",
+    company: "additionalExperience.company.examOffice",
+    period: "period.2024Present",
+    description: "additionalExperience.desc.examInvigilator",
+    skills: ["Supervision", "Integrity Management", "Student Support", "Policy Compliance"]
+  }
+];
+
 export const PROJECTS: ProjectItem[] = [
   // Developer Projects
   {
