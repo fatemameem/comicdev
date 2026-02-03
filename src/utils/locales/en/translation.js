@@ -45,6 +45,21 @@ export default {
       "experience.desc.technest":
         "Built responsive websites for 20+ clients. Collaborated closely with designers to implement pixel-perfect animations.",
 
+      // Additional Experience
+      "additionalExperience.title": "Chapter 3: Additional Experience",
+      "additionalExperience.role.customerService": "Customer Service Representative - Rogers & Fido",
+      "additionalExperience.company.ioSolutions": "IO Solutions Inc",
+      "additionalExperience.desc.ioSolutions":
+        "Experienced Customer Service Representative capable of answering inquiries, assuring satisfaction, and fulfilling 100% performance targets with a proven track record of efficient communication, multitasking, and building client loyalty.",
+      "additionalExperience.role.gradAmbassador": "Graduate Student Ambassador",
+      "additionalExperience.company.gradStudies": "School of Graduate Studies, Concordia University",
+      "additionalExperience.desc.gradAmbassador":
+        "Represented the graduate student community and promoted academic programs while providing guidance and support to prospective and current graduate students.",
+      "additionalExperience.role.examInvigilator": "Exam Invigilator",
+      "additionalExperience.company.examOffice": "Office of Examinations, Concordia University",
+      "additionalExperience.desc.examInvigilator":
+        "Supervised academic examinations ensuring integrity and adherence to university policies while providing assistance to students during examination periods.",
+
       // =========================
       // PROJECTS
       // =========================
@@ -111,10 +126,27 @@ export default {
       "projects.dllinjection.longDescription":
         "This project implemented a static analysis framework using Ghidra to detect malicious DLL injection attempts in compiled binaries. Python scripts automated the identification of suspicious API calls such as VirtualAllocEx and WriteProcessMemory. The system analyzed 39 binaries and achieved 97% detection accuracy with an F1-score of 0.89 while improving reliability through refined pattern matching and reduced false positives. The project strengthened expertise in reverse engineering workflows and automated malware analysis pipelines.",
 
+      "projects.marvelhangman.title": "Marvel Hangman Game",
+      "projects.marvelhangman.problem":
+        "Classic word-guessing games are often generic and lack engaging themes for fans.",
+      "projects.marvelhangman.idea":
+        "Create a themed hangman game where players guess Marvel character names in a fun and interactive way.",
+      "projects.marvelhangman.solution":
+        "A browser-based hangman game built using Vanilla JavaScript, HTML, and CSS, allowing users to guess Marvel character names with interactive feedback.",
+      "projects.marvelhangman.longDescription":
+        "Marvel Hangman is a lightweight browser game where players guess the names of popular Marvel characters letter by letter before exhausting attempts. Built using Vanilla JavaScript, HTML, and CSS, the game provides responsive gameplay, dynamic word rendering, and interactive feedback to keep users engaged while showcasing core frontend development skills without relying on frameworks.",
+
       // =========================
       // FEATURES
       // =========================
-
+      "features.characterNameGuessing":
+        "Guess Marvel character names letter by letter",
+      "features.dynamicWordRendering": "Dynamic word and letter rendering",
+      "features.gameStateManagement":
+        "Interactive game state management and feedback",
+      "features.responsiveGameplay": "Responsive gameplay across devices",
+      "features.vanillaJsImplementation":
+        "Built purely with Vanilla JavaScript, HTML, and CSS",
       "features.roleBasedModeration":
         "Role-based content submission and moderation",
       "features.adminDashboard": "Admin dashboard with content management",
@@ -158,14 +190,21 @@ export default {
         "Reverse engineering and malware analysis workflow automation",
 
       // Voluntary
-      "voluntary.mentor.role": "Mentor",
-      "voluntary.mentor.org": "Code for Good",
-      "voluntary.mentor.desc":
-        "Teaching basic HTML/CSS to high school students in underrepresented communities.",
-      "voluntary.contributor.role": "Open Source Contributor",
-      "voluntary.contributor.org": "React Docs",
-      "voluntary.contributor.desc":
-        "Helped translate documentation to Spanish and fixed accessibility issues in examples.",
+
+      "voluntary.bdgsavp.role": "Vice President of Communications",
+      "voluntary.bdgsavp.org": "Bangladesh Graduate Student Association, Concordia University",
+      "voluntary.bdgsavp.desc":
+        "Led communication initiatives and coordinated outreach activities to strengthen engagement among graduate students and promote association events and programs.",
+
+      "voluntary.bracclubhr.role": "Assistant Director, Human Resources",
+      "voluntary.bracclubhr.org": "BRAC University Computer Club",
+      "voluntary.bracclubhr.desc":
+        "Supported recruitment, member coordination, and internal operations while helping organize club activities and events for students interested in technology and computing.",
+
+      "voluntary.bracadventureit.role": "Executive, IT",
+      "voluntary.bracadventureit.org": "BRAC University Adventure Club",
+      "voluntary.bracadventureit.desc":
+        "Provided technical support and managed digital resources and communications to assist in organizing events and activities for club members.",
 
       // Additional
       "additional.speaking": "Public Speaking: TechConf 2023",
@@ -175,10 +214,13 @@ export default {
       // Common
       "category.developer": "Developer",
       "category.security": "Security",
+      "category.academic": "Academic Research",
       "period.jun2021Dec2021": "JUN 2021 - DEC 2021",
       "period.sep2024Present": "SEP 2024 - PRESENT",
       "period.2017-2021": "2017 - 2021",
       "period.2023-2024": "2023 - 2024",
+      "period.2023-2025": "2023 - 2025",
+      "period.2024Present": "2024 - PRESENT",
 
       // Hero Section
       "hero.welcomeMessage": "Hi there! Welcome to my portfolio.",
@@ -213,6 +255,7 @@ export default {
       "projects.allIssues": "All Issues",
       "projects.developerChronicles": "Developer Chronicles",
       "projects.securityFiles": "Security Files",
+      "projects.academicResearch": "Academic Research",
       "projects.noIssuesFound": "No issues found in this archive.",
       "projects.viewAll": "View All",
 

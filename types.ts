@@ -30,7 +30,7 @@ export interface EducationItem {
 export interface ProjectItem {
   id: number;
   title: string;
-  category: 'Developer' | 'Security';
+  category: 'Developer' | 'Security' | 'Academic Research';
   issueNumber: string;
   problem: string;
   idea: string;

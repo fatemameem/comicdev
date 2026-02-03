@@ -139,7 +139,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: 5,
     title: "projects.mealrecommender.title",
-    category: "category.developer",
+    category: "category.academic",
     issueNumber: "#05",
     problem: "projects.mealrecommender.problem",
     idea: "projects.mealrecommender.idea",
@@ -178,21 +178,50 @@ export const PROJECTS: ProjectItem[] = [
       "https://picsum.photos/800/450?random=11",
       "https://picsum.photos/800/450?random=12"
     ]
+  },
+  {
+    id: 7,
+    title: "projects.marvelhangman.title",
+    category: "category.developer",
+    issueNumber: "#07",
+    problem: "projects.marvelhangman.problem",
+    idea: "projects.marvelhangman.idea",
+    solution: "projects.marvelhangman.solution",
+    longDescription: "projects.marvelhangman.longDescription",
+    features: [
+      "features.characterNameGuessing",
+      "features.dynamicWordRendering",
+      "features.gameStateManagement",
+      "features.responsiveGameplay",
+      "features.vanillaJsImplementation"
+    ],
+    techStack: ["Vanilla JavaScript", "HTML", "CSS", "Game Development"],
+    links: { demo: "#", repo: "#" },
+    screenshots: [
+      "https://picsum.photos/800/450?random=13",
+      "https://picsum.photos/800/450?random=14"
+    ]
   }
 ];
 
 export const VOLUNTARY: VoluntaryItem[] = [
   {
     id: 1,
-    role: "voluntary.mentor.role",
-    organization: "voluntary.mentor.org",
-    description: "voluntary.mentor.desc"
+    role: "voluntary.bdgsavp.role",
+    organization: "voluntary.bdgsavp.org",
+    description: "voluntary.bdgsavp.desc"
   },
   {
     id: 2,
-    role: "voluntary.contributor.role",
-    organization: "voluntary.contributor.org",
-    description: "voluntary.contributor.desc"
+    role: "voluntary.bracclubhr.role",
+    organization: "voluntary.bracclubhr.org",
+    description: "voluntary.bracclubhr.desc"
+  },
+  {
+    id: 3,
+    role: "voluntary.bracadventureit.role",
+    organization: "voluntary.bracadventureit.org",
+    description: "voluntary.bracadventureit.desc"
   }
 ];
 

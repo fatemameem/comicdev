@@ -41,6 +41,21 @@ export default {
       "experience.company.technest": "TECHNEST Canada",
       "experience.desc.technest": "Création de sites web adaptatifs pour plus de 20 clients. Collaboration étroite avec les designers pour implémenter des animations au pixel près.",
 
+      // Additional Experience
+      "additionalExperience.title": "Chapitre 3: Expérience Additionnelle",
+      "additionalExperience.role.customerService": "Représentant du Service Client - Rogers & Fido",
+      "additionalExperience.company.ioSolutions": "IO Solutions Inc",
+      "additionalExperience.desc.ioSolutions":
+        "Représentant expérimenté du service client capable de répondre aux demandes, d'assurer la satisfaction et d'atteindre 100% des objectifs de performance avec un historique prouvé de communication efficace, multitâches et fidélisation de la clientèle.",
+      "additionalExperience.role.gradAmbassador": "Ambassadeur des Étudiants Diplômés",
+      "additionalExperience.company.gradStudies": "École des Études Supérieures, Université Concordia",
+      "additionalExperience.desc.gradAmbassador":
+        "Représenté la communauté des étudiants diplômés et promu les programmes académiques tout en fournissant des conseils et un soutien aux futurs étudiants diplômés et actuels.",
+      "additionalExperience.role.examInvigilator": "Surveillant d'Examens",
+      "additionalExperience.company.examOffice": "Bureau des Examens, Université Concordia",
+      "additionalExperience.desc.examInvigilator":
+        "Supervisé les examens académiques en assurant l'intégrité et le respect des politiques universitaires tout en fournissant de l'aide aux étudiants pendant les périodes d'examens.",
+
       // =========================
       // PROJECTS
       // =========================
@@ -85,10 +100,20 @@ export default {
       "projects.dllinjection.solution": "Un framework d'analyse statique basé sur Ghidra enrichi de scripts d'automatisation Python pour détecter les modèles d'injection suspects et réduire les faux positifs.",
       "projects.dllinjection.longDescription": "Ce projet a implémenté un framework d'analyse statique utilisant Ghidra pour détecter les tentatives d'injection de DLL malveillantes dans les binaires compilés. Les scripts Python ont automatisé l'identification d'appels API suspects tels que VirtualAllocEx et WriteProcessMemory. Le système a analysé 39 binaires et atteint 97% de précision de détection avec un F1-score de 0,89 tout en améliorant la fiabilité grâce à une correspondance de motifs raffinée et une réduction des faux positifs. Le projet a renforcé l'expertise dans les workflows d'ingénierie inverse et les pipelines d'analyse automatisée de malwares.",
 
+      "projects.marvelhangman.title": "Jeu du Pendu Marvel",
+      "projects.marvelhangman.problem": "Les jeux de devinettes classiques sont souvent génériques et manquent de thèmes engageants pour les fans.",
+      "projects.marvelhangman.idea": "Créer un jeu du pendu thématique où les joueurs devinent les noms de personnages Marvel de manière amusante et interactive.",
+      "projects.marvelhangman.solution": "Un jeu du pendu basé sur navigateur construit avec Vanilla JavaScript, HTML et CSS, permettant aux utilisateurs de deviner les noms de personnages Marvel avec des commentaires interactifs.",
+      "projects.marvelhangman.longDescription": "Marvel Hangman est un jeu de navigateur léger où les joueurs devinent les noms de personnages Marvel populaires lettre par lettre avant d'épuiser leurs tentatives. Construit avec Vanilla JavaScript, HTML et CSS, le jeu offre un gameplay réactif, un rendu dynamique des mots et des commentaires interactifs pour maintenir l'engagement des utilisateurs tout en mettant en valeur les compétences de développement frontend de base sans dépendre de frameworks.",
+
       // =========================
       // FEATURES
       // =========================
-
+      "features.characterNameGuessing": "Deviner les noms de personnages Marvel lettre par lettre",
+      "features.dynamicWordRendering": "Rendu dynamique des mots et lettres",
+      "features.gameStateManagement": "Gestion interactive de l'état du jeu et commentaires",
+      "features.responsiveGameplay": "Gameplay réactif sur tous les appareils",
+      "features.vanillaJsImplementation": "Construit purement avec Vanilla JavaScript, HTML et CSS",
       "features.roleBasedModeration": "Soumission de contenu basée sur les rôles et modération",
       "features.adminDashboard": "Tableau de bord d'administration avec gestion de contenu",
       "features.mobileResponsive": "Conception UI réactive mobile-first",
@@ -117,12 +142,17 @@ export default {
       "features.reverseEngineeringWorkflow": "Automatisation des workflows d'ingénierie inverse et d'analyse de malwares",
 
       // Voluntary
-      "voluntary.mentor.role": "Mentor",
-      "voluntary.mentor.org": "Code for Good",
-      "voluntary.mentor.desc": "Enseignement du HTML/CSS de base aux étudiants du secondaire dans les communautés sous-représentées.",
-      "voluntary.contributor.role": "Contributeur Open Source",
-      "voluntary.contributor.org": "React Docs",
-      "voluntary.contributor.desc": "Aide à la traduction de la documentation en espagnol et correction des problèmes d'accessibilité dans les exemples.",
+      "voluntary.bdgsavp.role": "Vice-Présidente aux Communications",
+      "voluntary.bdgsavp.org": "Association des Étudiants Diplômés du Bangladesh, Université Concordia",
+      "voluntary.bdgsavp.desc": "Dirigé les initiatives de communication et coordonné les activités de sensibilisation pour renforcer l'engagement parmi les étudiants diplômés et promouvoir les événements et programmes de l'association.",
+
+      "voluntary.bracclubhr.role": "Directrice Adjointe, Ressources Humaines",
+      "voluntary.bracclubhr.org": "Club Informatique de l'Université BRAC",
+      "voluntary.bracclubhr.desc": "Soutenu le recrutement, la coordination des membres et les opérations internes tout en aidant à organiser les activités et événements du club pour les étudiants intéressés par la technologie et l'informatique.",
+
+      "voluntary.bracadventureit.role": "Exécutive, TI",
+      "voluntary.bracadventureit.org": "Club d'Aventure de l'Université BRAC",
+      "voluntary.bracadventureit.desc": "Fourni un support technique et géré les ressources numériques et communications pour aider à organiser des événements et activités pour les membres du club.",
 
       // Additional
       "additional.speaking": "Prise de parole publique : TechConf 2023",
@@ -132,6 +162,7 @@ export default {
       // Common
       "category.developer": "Développeur",
       "category.security": "Sécurité",
+      "category.academic": "Recherche Académique",
       "period.jun2021Dec2021": "JUN 2021 - DEC 2021",
       "period.sep2024Present": "SEP 2024 - PRÉSENT",
       "period.2017-2021": "2017 - 2021",
@@ -169,6 +200,7 @@ export default {
       "projects.allIssues": "Tous les Numéros",
       "projects.developerChronicles": "Chroniques du Développeur",
       "projects.securityFiles": "Dossiers Sécurité",
+      "projects.academicResearch": "Recherche Académique",
       "projects.noIssuesFound": "Aucun numéro trouvé dans cette archive.",
       "projects.viewAll": "Voir Tout",
 

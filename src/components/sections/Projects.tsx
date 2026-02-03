@@ -19,6 +19,7 @@ export const Projects: React.FC = () => {
 
   const developerProjects = filteredProjects.filter(p => t(p.category) === t('category.developer'));
   const securityProjects = filteredProjects.filter(p => t(p.category) === t('category.security'));
+  const academicProjects = filteredProjects.filter(p => t(p.category) === t('category.academic'));
 
   const ProjectCard = ({ project }: { project: ProjectItem }) => (
     <div 
@@ -126,7 +127,7 @@ export const Projects: React.FC = () => {
 
         {/* Security Projects */}
         {securityProjects.length > 0 && (
-          <div>
+          <div className="mb-20">
             <div className="flex items-center gap-4 mb-8">
               <h3 className="font-comic font-bold text-3xl text-comic-black dark:text-white transform rotate-1">
                 {t('projects.securityFiles')}
@@ -136,6 +137,24 @@ export const Projects: React.FC = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {securityProjects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Academic Research Projects */}
+        {academicProjects.length > 0 && (
+          <div className="mb-20">
+            <div className="flex items-center gap-4 mb-8">
+              <h3 className="font-comic font-bold text-3xl text-comic-black dark:text-white transform -rotate-1">
+                {t('projects.academicResearch')}
+              </h3>
+              <div className="flex-1 h-px bg-comic-black dark:bg-gray-600 border-b border-dashed border-gray-400"></div>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {academicProjects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}
             </div>
