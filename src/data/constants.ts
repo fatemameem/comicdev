@@ -50,43 +50,20 @@ export const PROJECTS: ProjectItem[] = [
   // Developer Projects
   {
     id: 1,
-    title: "projects.ecotracker.title",
+    title: "projects.technest.title",
     category: "category.developer",
     issueNumber: "#01",
-    problem: "projects.ecotracker.problem",
-    idea: "projects.ecotracker.idea",
-    solution: "projects.ecotracker.solution",
-    longDescription: "projects.ecotracker.longDescription",
+    problem: "projects.technest.problem",
+    idea: "projects.technest.idea",
+    solution: "projects.technest.solution",
+    longDescription: "projects.technest.longDescription",
     features: [
-      "features.autoDetection",
-      "features.gamifiedRewards",
-      "features.offlineSupport",
-      "features.dataVisualization"
+      "features.dashboardRealtimeUpdates",
+      "features.googleSheetsIntegration",
+      "features.apiCaching",
+      "features.globalStateManagement"
     ],
-    techStack: ["React", "Tailwind", "Framer Motion", "PWA"],
-    links: { demo: "#", repo: "#" },
-    screenshots: [
-      "https://picsum.photos/800/450?random=1",
-      "https://picsum.photos/800/450?random=2",
-      "https://picsum.photos/800/450?random=3"
-    ]
-  },
-  {
-    id: 2,
-    title: "projects.devdash.title",
-    category: "category.developer",
-    issueNumber: "#02",
-    problem: "projects.devdash.problem",
-    idea: "projects.devdash.idea",
-    solution: "projects.devdash.solution",
-    longDescription: "projects.devdash.longDescription",
-    features: [
-      "features.dragDropLayout",
-      "features.oauth2Integration",
-      "features.realtimeUpdates",
-      "features.darkLightMode"
-    ],
-    techStack: ["Electron", "TypeScript", "GraphQL", "Apollo"],
+    techStack: ["Next.js", "TypeScript", "Google Sheets API", "Admin Dashboard", "PayloadCMS", "HTML", "Tailwind", "CSS", "Framer Motion"],
     links: { demo: "#", repo: "#" },
     screenshots: [
       "https://picsum.photos/800/450?random=4",
@@ -94,38 +71,65 @@ export const PROJECTS: ProjectItem[] = [
     ]
   },
   {
-    id: 3,
-    title: "projects.retrochat.title",
+    id: 2,
+    title: "projects.bdgsa.title",
     category: "category.developer",
+    issueNumber: "#02",
+    problem: "projects.bdgsa.problem",
+    idea: "projects.bdgsa.idea",
+    solution: "projects.bdgsa.solution",
+    longDescription: "projects.bdgsa.longDescription",
+    features: [
+      "features.roleBasedModeration",
+      "features.adminDashboard",
+      "features.mobileResponsive",
+      "features.restApiIntegration"
+    ],
+    techStack: ["Next.js", "TypeScript", "JWT", "REST API", "Tailwind", "Framer Motion"],
+    links: { demo: "#", repo: "#" },
+    screenshots: [
+      "https://picsum.photos/800/450?random=1",
+      "https://picsum.photos/800/450?random=2",
+      "https://picsum.photos/800/450?random=3"
+    ]
+  },
+  // Security Projects
+  {
+    id: 3,
+    title: "projects.containerguard.title",
+    category: "category.security",
     issueNumber: "#03",
-    problem: "projects.retrochat.problem",
-    idea: "projects.retrochat.idea",
-    solution: "projects.retrochat.solution",
-    longDescription: "projects.retrochat.longDescription",
-    techStack: ["Node.js", "Socket.io", "Redis", "React"],
+    problem: "projects.containerguard.problem",
+    idea: "projects.containerguard.idea",
+    solution: "projects.containerguard.solution",
+    longDescription: "projects.containerguard.longDescription",
+    features: [
+      "features.containerIsolation",
+      "features.attackSimulation",
+      "features.readOnlyFilesystem"
+    ],
+    techStack: ["Docker", "Security Testing", "Network Isolation", "Privilege Control"],
     links: { demo: "#", repo: "#" },
     screenshots: [
       "https://picsum.photos/800/450?random=6",
       "https://picsum.photos/800/450?random=7"
     ]
   },
-  // Security Projects (Placeholder)
   {
     id: 4,
-    title: "projects.netsentinel.title",
+    title: "projects.malwaredefense.title",
     category: "category.security",
     issueNumber: "#04",
-    problem: "projects.netsentinel.problem",
-    idea: "projects.netsentinel.idea",
-    solution: "projects.netsentinel.solution",
-    longDescription: "projects.netsentinel.longDescription",
+    problem: "projects.malwaredefense.problem",
+    idea: "projects.malwaredefense.idea",
+    solution: "projects.malwaredefense.solution",
+    longDescription: "projects.malwaredefense.longDescription",
     features: [
-      "features.packetAnalysis",
-      "features.mlAnomalyDetection",
-      "features.telegramAlerts",
-      "features.lowResource"
+      "features.reverseEngineering",
+      "features.vulnerabilityAutomation",
+      "features.legacyDefense"
     ],
-    techStack: ["Python", "TensorFlow", "Linux", "Networking"],
+    techStack: ["Ghidra", "Python", "Reverse Engineering", "Vulnerability Detection"],
     links: { demo: "#", repo: "#" },
     screenshots: [
       "https://picsum.photos/800/450?random=8",
@@ -134,17 +138,45 @@ export const PROJECTS: ProjectItem[] = [
   },
   {
     id: 5,
-    title: "projects.ciphervault.title",
-    category: "category.security",
+    title: "projects.mealrecommender.title",
+    category: "category.developer",
     issueNumber: "#05",
-    problem: "projects.ciphervault.problem",
-    idea: "projects.ciphervault.idea",
-    solution: "projects.ciphervault.solution",
-    longDescription: "projects.ciphervault.longDescription",
-    techStack: ["Go", "Cryptography", "CLI", "Security"],
+    problem: "projects.mealrecommender.problem",
+    idea: "projects.mealrecommender.idea",
+    solution: "projects.mealrecommender.solution",
+    longDescription: "projects.mealrecommender.longDescription",
+    features: [
+      "features.eegAnalysis",
+      "features.mlPrediction",
+      "features.personalizedSuggestions"
+    ],
+    techStack: ["Machine Learning", "EEG Processing", "Random Forest", "XGBoost"],
     links: { demo: "#", repo: "#" },
     screenshots: [
       "https://picsum.photos/800/450?random=10"
+    ]
+  },
+  {
+    id: 6,
+    title: "projects.dllinjection.title",
+    category: "category.security",
+    issueNumber: "#06",
+    problem: "projects.dllinjection.problem",
+    idea: "projects.dllinjection.idea",
+    solution: "projects.dllinjection.solution",
+    longDescription: "projects.dllinjection.longDescription",
+    features: [
+      "features.staticBinaryAnalysis",
+      "features.apiDetectionAutomation",
+      "features.patternMatchingEngine",
+      "features.datasetAnalysis",
+      "features.reverseEngineeringWorkflow"
+    ],
+    techStack: ["Ghidra", "Python", "Static Analysis", "Binary Analysis", "Malware Detection"],
+    links: { demo: "#", repo: "#" },
+    screenshots: [
+      "https://picsum.photos/800/450?random=11",
+      "https://picsum.photos/800/450?random=12"
     ]
   }
 ];

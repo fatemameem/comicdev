@@ -41,50 +41,80 @@ export default {
       "experience.company.technest": "TECHNEST Canada",
       "experience.desc.technest": "Création de sites web adaptatifs pour plus de 20 clients. Collaboration étroite avec les designers pour implémenter des animations au pixel près.",
 
-      // Projects
-      "projects.ecotracker.title": "EcoTracker",
-      "projects.ecotracker.problem": "Les gens veulent suivre leur empreinte carbone mais les applications existantes sont ennuyeuses et trop techniques.",
-      "projects.ecotracker.idea": "Gamifier l'expérience ! Faire en sorte que sauver la planète ressemble à un jeu RPG.",
-      "projects.ecotracker.solution": "Une PWA mobile qui utilise les capteurs de l'appareil pour suivre automatiquement les déplacements et récompense les utilisateurs avec des 'Eco-Coins'.",
-      "projects.ecotracker.longDescription": "EcoTracker est une application web progressive conçue pour rendre la sensibilisation environnementale amusante. En exploitant le GPS et l'accéléromètre de l'appareil, l'application détecte automatiquement les modes de transport (marche, vélo, voiture) et estime les émissions de carbone.",
-      
-      "projects.devdash.title": "DevDash",
-      "projects.devdash.problem": "Les développeurs ont trop d'onglets ouverts pour Jira, GitHub et le statut CI/CD.",
-      "projects.devdash.idea": "Un centre de commande unifié pour les workflows devops.",
-      "projects.devdash.solution": "Application de bureau basée sur Electron agrégant les données d'API des principaux outils dev dans un seul tableau de bord personnalisable.",
-      "projects.devdash.longDescription": "DevDash centralise le workflow chaotique des développeurs en une seule fenêtre. Il se connecte aux API populaires pour récupérer le statut des PR, les assignations de tickets et la santé des pipelines de build en temps réel.",
-      
-      "projects.retrochat.title": "RetroChat",
-      "projects.retrochat.problem": "Les applications de chat modernes sont surchargées. Parfois, on veut juste du texte simple.",
-      "projects.retrochat.idea": "Retour aux bases. L'ambiance IRC avec la sécurité moderne.",
-      "projects.retrochat.solution": "Application de chat en temps réel utilisant WebSockets avec chiffrement de bout en bout et aucun stockage persistant.",
-      "projects.retrochat.longDescription": "Un clin d'œil nostalgique aux clients IRC, RetroChat offre une communication éphémère et sécurisée. Aucun historique de messages n'est stocké sur le serveur, garantissant une confidentialité totale.",
-      
-      "projects.netsentinel.title": "NetSentinel",
-      "projects.netsentinel.problem": "Les petites entreprises manquent de systèmes de détection d'intrusion abordables.",
-      "projects.netsentinel.idea": "Un moniteur réseau léger, compatible Raspberry Pi.",
-      "projects.netsentinel.solution": "Renifleur de paquets basé sur Python qui utilise l'apprentissage automatique pour identifier les patterns de trafic anormaux.",
-      "projects.netsentinel.longDescription": "NetSentinel est conçu pour les appareils de périphérie à faible consommation. Il surveille le trafic réseau local et alerte les administrateurs des tentatives suspectes de scan de ports ou d'exfiltration de données via un bot Telegram.",
-      
-      "projects.ciphervault.title": "CipherVault",
-      "projects.ciphervault.problem": "Stocker des secrets dans des variables d'environnement peut encore présenter des fuites.",
-      "projects.ciphervault.idea": "Un CLI de gestion de secrets soutenu par le matériel.",
-      "projects.ciphervault.solution": "Un outil CLI qui s'interface avec les YubiKeys pour déchiffrer les secrets uniquement en mémoire pendant l'exécution.",
-      "projects.ciphervault.longDescription": "CipherVault ajoute une couche physique de sécurité aux secrets de développement. Il nécessite la présence d'un token matériel pour déchiffrer les fichiers de configuration, empêchant le vol de données à distance.",
+      // =========================
+      // PROJECTS
+      // =========================
 
-      // Project Features
-      "features.autoDetection": "Détection automatique d'activité",
-      "features.gamifiedRewards": "Système de récompenses gamifié avec classements",
-      "features.offlineSupport": "Support hors ligne via Service Workers",
-      "features.dataVisualization": "Graphiques de visualisation de données interactifs",
-      "features.dragDropLayout": "Disposition par glisser-déposer des widgets",
-      "features.oauth2Integration": "Intégration OAuth2 pour GitHub et Jira",
-      "features.realtimeUpdates": "Mises à jour websocket en temps réel",
-      "features.darkLightMode": "Thèmes mode sombre/clair",
-      "features.packetAnalysis": "Analyse de paquets en temps réel",
-      "features.mlAnomalyDetection": "Détection d'anomalies basée sur ML",
-      "features.telegramAlerts": "Alertes Telegram/Slack",
-      "features.lowResource": "Empreinte de ressources faible",
+      "projects.bdgsa.title": "Plateforme Web BDGSA",
+      "projects.bdgsa.problem": "Les organisations étudiantes ont du mal à maintenir des sites web dynamiques sans nécessiter une implication constante des développeurs.",
+      "projects.bdgsa.idea": "Créer une plateforme de blog et de contenu évolutive avec gestion basée sur les rôles et workflows de modération.",
+      "projects.bdgsa.solution": "Une plateforme Next.js full-stack avec tableaux de bord d'administration, authentification JWT, et workflows de soumission de contenu modéré.",
+      "projects.bdgsa.longDescription": "La plateforme web BDGSA fournit un système de gestion de contenu évolutif et réactif permettant aux organisations étudiantes de publier facilement des blogs et des mises à jour. Elle dispose d'APIs REST, d'authentification d'administration, de workflows de modération basés sur les rôles, et d'une conception UI mobile-first optimisée pour l'accessibilité et l'évolutivité.",
+
+
+      "projects.technest.title": "Plateforme Tech-Nest Canada",
+      "projects.technest.problem": "Les équipes non-techniques doivent gérer les événements et podcasts sans dépendance aux développeurs.",
+      "projects.technest.idea": "Fournir une plateforme pilotée par tableau de bord permettant aux non-développeurs de mettre à jour le contenu du site via des outils simples.",
+      "projects.technest.solution": "Une plateforme Next.js + TypeScript en production intégrée avec Google Sheets et un tableau de bord d'administration pour gérer les événements, podcasts et données d'équipe.",
+      "projects.technest.longDescription": "Tech-Nest Canada est une plateforme de production en direct soutenant les initiatives de cybersécurité et d'éthique IA. Elle intègre la gestion de contenu alimentée par Google Sheets, les mises à jour de tableau de bord en temps réel, les optimisations de mise en cache, et la gestion d'état global pour offrir des expériences utilisateur fluides et des mises à jour de contenu rapides.",
+
+
+      "projects.containerguard.title": "Container Guard",
+      "projects.containerguard.problem": "Les applications conteneurisées sont vulnérables aux attaques en raison de configurations faibles et d'isolation inappropriée.",
+      "projects.containerguard.idea": "Analyser et renforcer les environnements de conteneurs en appliquant les meilleures pratiques de sécurité de conteneurs modernes.",
+      "projects.containerguard.solution": "Une implémentation axée sur la sécurité utilisant des environnements Docker pour tester les vulnérabilités et implémenter l'isolation, les contrôles de privilèges, et les défenses d'attaque.",
+      "projects.containerguard.longDescription": "Container Guard analyse les vulnérabilités au sein des environnements Docker conteneurisés, implémentant des protections telles que l'accès aux privilèges minimums, l'isolation réseau, et les systèmes de fichiers en lecture seule. Les tests de sécurité incluaient l'injection SQL, les attaques par inondation SYN, et l'exploitation XSS pour démontrer les stratégies de défense et renforcer les déploiements de conteneurs.",
+
+
+      "projects.malwaredefense.title": "Analyse et Défense Automatisée contre les Malwares",
+      "projects.malwaredefense.problem": "Les systèmes logiciels hérités restent vulnérables en raison de vulnérabilités non détectées et de défenses obsolètes.",
+      "projects.malwaredefense.idea": "Automatiser la détection de vulnérabilités de malwares et renforcer les mécanismes de défense en utilisant des outils d'ingénierie inverse.",
+      "projects.malwaredefense.solution": "Ingénierie inverse d'exécutables avec Ghidra et développement de scripts Python pour automatiser la détection et l'atténuation des vulnérabilités.",
+      "projects.malwaredefense.longDescription": "Ce projet impliquait l'ingénierie inverse d'exécutables utilisant Ghidra pour identifier les failles de sécurité telles que les identifiants codés en dur et les débordements de tampon. Des scripts Python automatisés ont été développés pour améliorer la détection de vulnérabilités et les implémentations de défense, améliorant la résilience des logiciels hérités.",
+
+
+      "projects.mealrecommender.title": "Système de Recommandation de Repas Basé sur les Émotions",
+      "projects.mealrecommender.problem": "Les systèmes traditionnels de recommandation de repas ignorent les réponses émotionnelles influençant les choix alimentaires.",
+      "projects.mealrecommender.idea": "Utiliser les données EEG pour personnaliser les recommandations de repas basées sur les réactions émotionnelles.",
+      "projects.mealrecommender.solution": "Un système d'apprentissage automatique analysant les signaux EEG et appliquant plusieurs algorithmes ML pour recommander des repas alignés avec les réponses émotionnelles.",
+      "projects.mealrecommender.longDescription": "Le système analysait les signaux EEG de participants pour comprendre les réactions émotionnelles envers la nourriture et recommander des repas en conséquence. Plusieurs algorithmes ML incluant Random Forest, KNN, SVM, et XGBoost ont été utilisés pour valider les recommandations de repas personnalisées.",
+
+      "projects.dllinjection.title": "Détection d'Injection de DLL Malveillantes utilisant Ghidra",
+      "projects.dllinjection.problem": "Les injections de DLL malveillantes permettent aux attaquants d'exécuter du code non autorisé dans des processus légitimes, rendant la détection difficile dans de grands ensembles de données binaires.",
+      "projects.dllinjection.idea": "Utiliser des techniques d'analyse de code statique pour détecter automatiquement les appels API suspects et les modèles d'injection dans les binaires.",
+      "projects.dllinjection.solution": "Un framework d'analyse statique basé sur Ghidra enrichi de scripts d'automatisation Python pour détecter les modèles d'injection suspects et réduire les faux positifs.",
+      "projects.dllinjection.longDescription": "Ce projet a implémenté un framework d'analyse statique utilisant Ghidra pour détecter les tentatives d'injection de DLL malveillantes dans les binaires compilés. Les scripts Python ont automatisé l'identification d'appels API suspects tels que VirtualAllocEx et WriteProcessMemory. Le système a analysé 39 binaires et atteint 97% de précision de détection avec un F1-score de 0,89 tout en améliorant la fiabilité grâce à une correspondance de motifs raffinée et une réduction des faux positifs. Le projet a renforcé l'expertise dans les workflows d'ingénierie inverse et les pipelines d'analyse automatisée de malwares.",
+
+      // =========================
+      // FEATURES
+      // =========================
+
+      "features.roleBasedModeration": "Soumission de contenu basée sur les rôles et modération",
+      "features.adminDashboard": "Tableau de bord d'administration avec gestion de contenu",
+      "features.mobileResponsive": "Conception UI réactive mobile-first",
+      "features.restApiIntegration": "Gestion de contenu dynamique alimentée par API REST",
+      "features.dashboardRealtimeUpdates": "Mises à jour de tableau de bord reflétées sur le site en temps réel",
+      "features.googleSheetsIntegration": "Mises à jour de contenu alimentées par Google Sheets",
+      "features.apiCaching": "Mise en cache API et mémorisation pour amélioration des performances",
+      "features.globalStateManagement": "Gestion d'état global entre le tableau de bord et les pages publiques",
+
+      "features.containerIsolation": "Isolation de conteneurs et accès aux privilèges minimums",
+      "features.attackSimulation": "Tests de sécurité contre injection SQL, inondation SYN, et XSS",
+      "features.readOnlyFilesystem": "Protections de système de fichiers de conteneur en lecture seule",
+
+      "features.reverseEngineering": "Ingénierie inverse d'exécutables utilisant Ghidra",
+      "features.vulnerabilityAutomation": "Détection automatisée de vulnérabilités via scripts Python",
+      "features.legacyDefense": "Améliorations de défense pour systèmes hérités",
+
+      "features.eegAnalysis": "Traitement de signaux EEG pour analyse d'émotions",
+      "features.mlPrediction": "Modèles de recommandation basés sur l'apprentissage automatique",
+      "features.personalizedSuggestions": "Suggestions de repas personnalisées basées sur les émotions",
+
+      "features.staticBinaryAnalysis": "Analyse binaire statique utilisant Ghidra",
+      "features.apiDetectionAutomation": "Détection automatisée d'appels API suspects via scripts Python",
+      "features.patternMatchingEngine": "Moteur de correspondance de motifs précis pour réduire les faux positifs",
+      "features.datasetAnalysis": "Analyse d'ensembles de données binaires à grande échelle",
+      "features.reverseEngineeringWorkflow": "Automatisation des workflows d'ingénierie inverse et d'analyse de malwares",
 
       // Voluntary
       "voluntary.mentor.role": "Mentor",

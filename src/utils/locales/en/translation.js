@@ -28,71 +28,144 @@ export default {
       // Education
       "education.degree.bsc": "B.Sc. Computer Science and Engineering",
       "education.school.brac": "BRAC University",
-      "education.details.brac": "Focus on Human-Computer Interaction & Web Technologies. Graduated Summa Cum Laude.",
+      "education.details.brac":
+        "Focus on Human-Computer Interaction & Web Technologies. Graduated Summa Cum Laude.",
       "education.degree.meng": "M.Engg. Information Systems Security",
       "education.school.concordia": "Concordia University",
-      "education.details.concordia": "Intensive 12-week program covering React, Node.js, and Cloud Infrastructure.",
+      "education.details.concordia":
+        "Intensive 12-week program covering React, Node.js, and Cloud Infrastructure.",
 
       // Experience
       "experience.role.frontend": "Frontend Developer",
       "experience.company.bevy": "Bevy Commerce",
-      "experience.desc.bevy": "Leading the UI redesign initiative. Improved performance by 40% through code splitting and asset optimization. Mentoring junior developers.",
+      "experience.desc.bevy":
+        "Leading the UI redesign initiative. Improved performance by 40% through code splitting and asset optimization. Mentoring junior developers.",
       "experience.role.webdev": "Web Developer (Volunteer)",
       "experience.company.technest": "TECHNEST Canada",
-      "experience.desc.technest": "Built responsive websites for 20+ clients. Collaborated closely with designers to implement pixel-perfect animations.",
+      "experience.desc.technest":
+        "Built responsive websites for 20+ clients. Collaborated closely with designers to implement pixel-perfect animations.",
 
-      // Projects
-      "projects.ecotracker.title": "EcoTracker",
-      "projects.ecotracker.problem": "People want to track their carbon footprint but existing apps are boring and data-heavy.",
-      "projects.ecotracker.idea": "Gamify the experience! Make saving the planet feel like an RPG game.",
-      "projects.ecotracker.solution": "A mobile-first PWA that uses device sensors to auto-track travel and rewards users with 'Eco-Coins'.",
-      "projects.ecotracker.longDescription": "EcoTracker is a progressive web application designed to make environmental awareness fun. By leveraging the device's GPS and accelerometer, the app automatically detects modes of transport (walking, cycling, driving) and estimates carbon emissions.",
-      
-      "projects.devdash.title": "DevDash",
-      "projects.devdash.problem": "Developers have too many tabs open for Jira, GitHub, and CI/CD status.",
-      "projects.devdash.idea": "A unified command center for devops workflows.",
-      "projects.devdash.solution": "Electron-based desktop app aggregating API data from major dev tools into a single customizable dashboard.",
-      "projects.devdash.longDescription": "DevDash centralizes the chaotic developer workflow into a single window. It connects to popular APIs to pull PR status, ticket assignments, and build pipeline health in real-time.",
-      
-      "projects.retrochat.title": "RetroChat",
-      "projects.retrochat.problem": "Modern chat apps are bloated. Sometimes you just want simple text.",
-      "projects.retrochat.idea": "Back to basics. IRC vibes with modern security.",
-      "projects.retrochat.solution": "Real-time chat application using WebSockets with end-to-end encryption and zero persistent storage.",
-      "projects.retrochat.longDescription": "A nostalgic nod to IRC clients, RetroChat provides ephemeral, secure communication. No message history is stored on the server, ensuring complete privacy.",
-      
-      "projects.netsentinel.title": "NetSentinel",
-      "projects.netsentinel.problem": "Small businesses lack affordable intrusion detection systems.",
-      "projects.netsentinel.idea": "A lightweight, Raspberry Pi compatible network monitor.",
-      "projects.netsentinel.solution": "Python-based packet sniffer that uses machine learning to identify anomalous traffic patterns.",
-      "projects.netsentinel.longDescription": "NetSentinel is designed for low-power edge devices. It monitors local network traffic and alerts administrators of suspicious port scanning or data exfiltration attempts via Telegram bot.",
-      
-      "projects.ciphervault.title": "CipherVault",
-      "projects.ciphervault.problem": "Storing secrets in environment variables can still be leaky.",
-      "projects.ciphervault.idea": "A hardware-backed secret management CLI.",
-      "projects.ciphervault.solution": "A CLI tool that interfaces with YubiKeys to decrypt secrets only in memory during runtime.",
-      "projects.ciphervault.longDescription": "CipherVault adds a physical layer of security to development secrets. It requires a hardware token presence to decrypt configuration files, preventing remote data theft.",
+      // =========================
+      // PROJECTS
+      // =========================
 
-      // Project Features
-      "features.autoDetection": "Automatic activity detection",
-      "features.gamifiedRewards": "Gamified reward system with leaderboards",
-      "features.offlineSupport": "Offline support via Service Workers",
-      "features.dataVisualization": "Interactive data visualization charts",
-      "features.dragDropLayout": "Drag-and-drop widget layout",
-      "features.oauth2Integration": "OAuth2 integration for GitHub and Jira",
-      "features.realtimeUpdates": "Real-time websocket updates",
-      "features.darkLightMode": "Dark/Light mode themes",
-      "features.packetAnalysis": "Real-time packet analysis",
-      "features.mlAnomalyDetection": "ML-based anomaly detection",
-      "features.telegramAlerts": "Telegram/Slack alerts",
-      "features.lowResource": "Low resource footprint",
+      "projects.bdgsa.title": "BDGSA Website Platform",
+      "projects.bdgsa.problem":
+        "Student organizations struggle to maintain dynamic websites without requiring constant developer involvement.",
+      "projects.bdgsa.idea":
+        "Create a scalable blog and content platform with role-based management and moderation workflows.",
+      "projects.bdgsa.solution":
+        "A full-stack Next.js platform with admin dashboards, JWT authentication, and moderated content submission workflows.",
+      "projects.bdgsa.longDescription":
+        "The BDGSA website platform provides a scalable and responsive content management system allowing student organizations to publish blogs and updates easily. It features REST APIs, admin authentication, role-based moderation workflows, and mobile-first UI design optimized for accessibility and scalability.",
+
+      "projects.technest.title": "Tech-Nest Canada Platform",
+      "projects.technest.problem":
+        "Non-technical teams need to manage events and podcasts without developer dependency.",
+      "projects.technest.idea":
+        "Provide a dashboard-driven platform enabling non-developers to update site content through simple tools.",
+      "projects.technest.solution":
+        "A production Next.js + TypeScript platform integrated with Google Sheets and an admin dashboard for managing events, podcasts, and team data.",
+      "projects.technest.longDescription":
+        "Tech-Nest Canada is a live production platform supporting cybersecurity and AI ethics initiatives. It integrates Google Sheets-powered content management, real-time dashboard updates, caching optimizations, and global state management to deliver seamless user experiences and rapid content updates.",
+
+      "projects.containerguard.title": "Container Guard",
+      "projects.containerguard.problem":
+        "Containerized applications are vulnerable to attacks due to weak configurations and improper isolation.",
+      "projects.containerguard.idea":
+        "Analyze and harden container environments by applying modern container security best practices.",
+      "projects.containerguard.solution":
+        "A security-focused implementation using Docker environments to test vulnerabilities and implement isolation, privilege controls, and attack defenses.",
+      "projects.containerguard.longDescription":
+        "Container Guard analyzes vulnerabilities within Docker containerized environments, implementing protections such as least privilege access, network isolation, and read-only filesystems. Security testing included SQL injection, SYN flood attacks, and XSS exploitation to demonstrate defense strategies and strengthen container deployments.",
+
+      "projects.malwaredefense.title": "Malware Analysis & Defense Automation",
+      "projects.malwaredefense.problem":
+        "Legacy software systems remain vulnerable due to undetected vulnerabilities and outdated defenses.",
+      "projects.malwaredefense.idea":
+        "Automate malware vulnerability detection and strengthen defense mechanisms using reverse engineering tools.",
+      "projects.malwaredefense.solution":
+        "Reverse engineered executables with Ghidra and developed Python scripts to automate detection and mitigation of vulnerabilities.",
+      "projects.malwaredefense.longDescription":
+        "This project involved reverse engineering executables using Ghidra to identify security flaws such as hard-coded credentials and buffer overflows. Automated Python scripts were developed to improve vulnerability detection and defense implementations, improving legacy software resilience.",
+
+      "projects.mealrecommender.title":
+        "Emotion-Based Meal Recommendation System",
+      "projects.mealrecommender.problem":
+        "Traditional meal recommendation systems ignore emotional responses influencing food choices.",
+      "projects.mealrecommender.idea":
+        "Use EEG data to personalize meal recommendations based on emotional reactions.",
+      "projects.mealrecommender.solution":
+        "A machine learning system analyzing EEG signals and applying multiple ML algorithms to recommend meals aligned with emotional responses.",
+      "projects.mealrecommender.longDescription":
+        "The system analyzed EEG signals from participants to understand emotional reactions toward food and recommend meals accordingly. Multiple ML algorithms including Random Forest, KNN, SVM, and XGBoost were used to validate personalized meal recommendations.",
+
+      "projects.dllinjection.title":
+        "Malicious DLL Injection Detection using Ghidra",
+      "projects.dllinjection.problem":
+        "Malicious DLL injections allow attackers to execute unauthorized code within legitimate processes, making detection difficult in large binary datasets.",
+      "projects.dllinjection.idea":
+        "Use static code analysis techniques to automatically detect suspicious API calls and injection patterns within binaries.",
+      "projects.dllinjection.solution":
+        "A Ghidra-based static analysis framework enhanced with Python automation scripts to detect suspicious injection patterns and reduce false positives.",
+      "projects.dllinjection.longDescription":
+        "This project implemented a static analysis framework using Ghidra to detect malicious DLL injection attempts in compiled binaries. Python scripts automated the identification of suspicious API calls such as VirtualAllocEx and WriteProcessMemory. The system analyzed 39 binaries and achieved 97% detection accuracy with an F1-score of 0.89 while improving reliability through refined pattern matching and reduced false positives. The project strengthened expertise in reverse engineering workflows and automated malware analysis pipelines.",
+
+      // =========================
+      // FEATURES
+      // =========================
+
+      "features.roleBasedModeration":
+        "Role-based content submission and moderation",
+      "features.adminDashboard": "Admin dashboard with content management",
+      "features.mobileResponsive": "Mobile-first responsive UI design",
+      "features.restApiIntegration":
+        "REST API powered dynamic content management",
+      "features.dashboardRealtimeUpdates":
+        "Dashboard updates reflected across site in real time",
+      "features.googleSheetsIntegration":
+        "Google Sheets powered content updates",
+      "features.apiCaching":
+        "API caching and memoization for performance improvement",
+      "features.globalStateManagement":
+        "Global state management across dashboard and public pages",
+
+      "features.containerIsolation":
+        "Container isolation and least privilege access",
+      "features.attackSimulation":
+        "Security testing against SQL injection, SYN flood, and XSS",
+      "features.readOnlyFilesystem":
+        "Read-only container filesystem protections",
+
+      "features.reverseEngineering":
+        "Executable reverse engineering using Ghidra",
+      "features.vulnerabilityAutomation":
+        "Automated vulnerability detection via Python scripts",
+      "features.legacyDefense": "Defense enhancements for legacy systems",
+
+      "features.eegAnalysis": "EEG signal processing for emotion analysis",
+      "features.mlPrediction": "Machine learning based recommendation models",
+      "features.personalizedSuggestions":
+        "Emotion-driven personalized meal suggestions",
+
+      "features.staticBinaryAnalysis": "Static binary analysis using Ghidra",
+      "features.apiDetectionAutomation":
+        "Automated detection of suspicious API calls via Python scripting",
+      "features.patternMatchingEngine":
+        "Precise pattern matching to reduce false positives",
+      "features.datasetAnalysis": "Large-scale binary dataset analysis",
+      "features.reverseEngineeringWorkflow":
+        "Reverse engineering and malware analysis workflow automation",
 
       // Voluntary
       "voluntary.mentor.role": "Mentor",
       "voluntary.mentor.org": "Code for Good",
-      "voluntary.mentor.desc": "Teaching basic HTML/CSS to high school students in underrepresented communities.",
+      "voluntary.mentor.desc":
+        "Teaching basic HTML/CSS to high school students in underrepresented communities.",
       "voluntary.contributor.role": "Open Source Contributor",
       "voluntary.contributor.org": "React Docs",
-      "voluntary.contributor.desc": "Helped translate documentation to Spanish and fixed accessibility issues in examples.",
+      "voluntary.contributor.desc":
+        "Helped translate documentation to Spanish and fixed accessibility issues in examples.",
 
       // Additional
       "additional.speaking": "Public Speaking: TechConf 2023",
@@ -112,7 +185,8 @@ export default {
       "hero.mainTitle": "I Build",
       "hero.websites": "Websites",
       "hero.tellStories": "That Tell Stories.",
-      "hero.subtitle": "Frontend Engineer specializing in React, creative interactions, and pixel-perfect UIs.",
+      "hero.subtitle":
+        "Frontend Engineer specializing in React, creative interactions, and pixel-perfect UIs.",
       "hero.viewProjects": "View Projects",
       "hero.letsTalk": "Let's Talk",
       "hero.protagonist": "The Protagonist",
@@ -168,7 +242,8 @@ export default {
       "contact.message": "Message",
       "contact.messagePlaceholder": "Write something nice...",
       "contact.sendIt": "Send It",
-      "contact.quote": "Life is like a website. You just have to keep refactoring until it works.",
+      "contact.quote":
+        "Life is like a website. You just have to keep refactoring until it works.",
       "contact.findMeElsewhere": "Find me elsewhere:",
       "contact.twitter": "Twitter",
       "contact.linkedin": "LinkedIn",
@@ -178,7 +253,8 @@ export default {
 
       // Footer Section
       "footer.thanksForReading": "Thanks for reading!",
-      "footer.designedWith": "Designed with ❤️ and ☕️. No copyrighted characters were harmed in the making of this site.",
+      "footer.designedWith":
+        "Designed with ❤️ and ☕️. No copyrighted characters were harmed in the making of this site.",
       "footer.copyright": "© {{year}} Fatema A. Meem. All rights reserved.",
       "footer.backToTop": "Back to Top",
     },
