@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
       </div>
       
       {/* Background halftone pattern for footer */}
-      <div className="absolute inset-0 bg-[radial-gradient(#333_1px,transparent_1px)] bg-[length:10px_10px] opacity-20 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(#333_1px,transparent_1px)] bg-size-[10px_10px] opacity-20 pointer-events-none"></div>
     </footer>
   );
 };
