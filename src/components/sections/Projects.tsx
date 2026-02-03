@@ -4,8 +4,10 @@ import type { ProjectItem } from '../../../types';
 import { ComicPanel } from '../ui/ComicPanel';
 import { TechBadge } from '../ui/TechBadge';
 import { ProjectModal } from '../ui/ProjectModal';
+import { useTranslation } from 'react-i18next';
 
 export const Projects: React.FC = () => {
+  const { t } = useTranslation();
   const [filter, setFilter] = useState<string>('All');
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
   
@@ -15,8 +17,8 @@ export const Projects: React.FC = () => {
     ? PROJECTS 
     : PROJECTS.filter(p => p.techStack.includes(filter));
 
-  const developerProjects = filteredProjects.filter(p => p.category === 'Developer');
-  const securityProjects = filteredProjects.filter(p => p.category === 'Security');
+  const developerProjects = filteredProjects.filter(p => t(p.category) === t('category.developer'));
+  const securityProjects = filteredProjects.filter(p => t(p.category) === t('category.security'));
 
   const ProjectCard = ({ project }: { project: ProjectItem }) => (
     <div 
@@ -24,19 +26,19 @@ export const Projects: React.FC = () => {
       className="group cursor-pointer h-full"
     >
       <ComicPanel 
-        title={`${project.issueNumber}: ${project.title}`}
+        title={`${project.issueNumber}: ${t(project.title)}`}
         className="h-full flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-comic-hover dark:hover:shadow-comic-dark-hover"
       >
         {/* Preview Image Thumbnail */}
         <div className="w-[calc(100%+3rem)] -mx-6 -mt-6 mb-4 h-48 overflow-hidden border-b-2 border-comic-black dark:border-comic-gray relative">
           <img 
             src={project.screenshots[0]} 
-            alt={project.title}
+            alt={t(project.title)}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-comic-yellow/0 group-hover:bg-comic-yellow/10 transition-colors flex items-center justify-center">
             <span className="bg-white dark:bg-black border-2 border-comic-black px-4 py-2 font-comic font-bold shadow-comic opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 group-hover:bg-comic-yellow group-hover:text-comic-black transition-all duration-300">
-              Read Issue
+              {t('projects.readIssue')}
             </span>
         </div>
       </div>
@@ -45,12 +47,12 @@ export const Projects: React.FC = () => {
         {/* Quick Summary */}
         <div className="space-y-2 font-body text-sm">
             <p className="line-clamp-2 text-gray-600 dark:text-gray-300">
-              <span className="font-bold text-comic-black dark:text-white">Plot: </span> 
-              {project.problem}
+              <span className="font-bold text-comic-black dark:text-white">{t('projects.plot')} </span> 
+              {t(project.problem)}
             </p>
             <p className="line-clamp-2">
-              <span className="font-bold text-comic-black dark:text-white">Climax: </span>
-              {project.solution}
+              <span className="font-bold text-comic-black dark:text-white">{t('projects.climax')} </span>
+              {t(project.solution)}
             </p>
           </div>
 
@@ -77,10 +79,10 @@ export const Projects: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-comic font-bold text-5xl mb-4 bg-white dark:bg-comic-dark-paper inline-block px-4 border-2 border-comic-black dark:border-comic-gray shadow-comic dark:shadow-comic-dark transform -rotate-1 text-comic-black dark:text-white">
-            Featured Issues
+            {t('projects.title')}
           </h2>
           <p className="font-body mt-4 max-w-2xl mx-auto bg-white dark:bg-comic-dark-paper p-2 border border-comic-black dark:border-comic-gray rounded-lg text-comic-black dark:text-gray-300">
-            Select an issue to read the full story.
+            {t('projects.subtitle')}
           </p>
         </div>
 
@@ -90,7 +92,7 @@ export const Projects: React.FC = () => {
             onClick={() => setFilter('All')}
             className={`font-comic font-bold px-4 py-2 border-2 border-comic-black dark:border-comic-gray rounded-full transition-all text-comic-black  ${filter === 'All' ? 'bg-comic-yellow shadow-comic-sm text-comic-black dark:text-comic-black scale-105' : 'bg-white dark:bg-comic-dark-paper hover:bg-gray-50 dark:hover:bg-gray-800 dark:text-comic-dark-text'}`}
           >
-            All Issues
+            {t('projects.allIssues')}
           </button>
           {allTech.map(tech => (
             <button 
@@ -109,7 +111,7 @@ export const Projects: React.FC = () => {
           <div className="mb-20">
             <div className="flex items-center gap-4 mb-8">
               <h3 className="font-comic font-bold text-3xl text-comic-black dark:text-white transform -rotate-1">
-                Developer Chronicles
+                {t('projects.developerChronicles')}
               </h3>
               <div className="flex-1 h-px bg-comic-black dark:bg-gray-600 border-b border-dashed border-gray-400"></div>
             </div>
@@ -127,7 +129,7 @@ export const Projects: React.FC = () => {
           <div>
             <div className="flex items-center gap-4 mb-8">
               <h3 className="font-comic font-bold text-3xl text-comic-black dark:text-white transform rotate-1">
-                Security Files
+                {t('projects.securityFiles')}
               </h3>
               <div className="flex-1 h-px bg-comic-black dark:bg-gray-600 border-b border-dashed border-gray-400"></div>
             </div>
@@ -142,8 +144,8 @@ export const Projects: React.FC = () => {
         
         {filteredProjects.length === 0 && (
           <div className="text-center py-20 bg-white dark:bg-comic-dark-paper border-2 border-dashed border-comic-black dark:border-comic-gray rounded-lg">
-            <p className="font-comic text-2xl text-gray-500">No issues found in this archive.</p>
-            <button onClick={() => setFilter('All')} className="mt-4 text-blue-500 underline font-bold">View All</button>
+            <p className="font-comic text-2xl text-gray-500">{t('projects.noIssuesFound')}</p>
+            <button onClick={() => setFilter('All')} className="mt-4 text-blue-500 underline font-bold">{t('projects.viewAll')}</button>
           </div>
         )}
 

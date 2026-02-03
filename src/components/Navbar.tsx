@@ -3,8 +3,11 @@ import { NAV_ITEMS } from '../data/constants';
 import { Menu, X } from 'lucide-react';
 // import { useLocation, useNavigate } from 'react-router-dom';
 import { ThemeToggle } from './ThemeToggle';
+import LanguageToggle from './ui/LanguageToggle';
+import { useTranslation } from 'react-i18next';
 
 export const Navbar: React.FC = () => {
+  const { t } = useTranslation();
   const [activeSection, setActiveSection] = useState<string>('about');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -65,11 +68,12 @@ export const Navbar: React.FC = () => {
               {activeSection === item.id && (
                 <span className="absolute inset-0 bg-comic-yellow transform -skew-x-12 -z-10 rounded-sm"></span>
               )}
-              {item.label}
+              {t(item.label)}
             </button>
           ))}
           
           <div className="w-px h-6 bg-comic-black dark:bg-gray-700 mx-2"></div>
+          <LanguageToggle />
           <ThemeToggle/>
         </div>
 
@@ -78,6 +82,7 @@ export const Navbar: React.FC = () => {
           {/* <button onClick={toggleTheme} className="text-comic-black dark:text-comic-dark-text">
             {isDark ? <Sun size={24} /> : <Moon size={24} />}
           </button> */}
+          <LanguageToggle />
           <ThemeToggle/>
           <button className="text-comic-black dark:text-comic-dark-text" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -96,7 +101,7 @@ export const Navbar: React.FC = () => {
                 activeSection === item.id ? 'bg-comic-yellow text-comic-black border-comic-black shadow-comic-sm dark:shadow-none' : ''
               }`}
             >
-              {item.label}
+              {t(item.label)}
             </button>
           ))}
         </div>

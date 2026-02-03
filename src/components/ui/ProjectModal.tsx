@@ -4,6 +4,7 @@ import { X, ChevronLeft, ChevronRight, Github, ExternalLink } from 'lucide-react
 import { Button } from './Button';
 import { TechBadge } from './TechBadge';
 import { ComicPanel } from './ComicPanel';
+import { useTranslation } from 'react-i18next';
 
 interface ProjectModalProps {
   project: ProjectItem;
@@ -11,6 +12,7 @@ interface ProjectModalProps {
 }
 
 export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
+  const { t } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
@@ -67,18 +69,18 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 <span className="bg-comic-yellow text-comic-black font-comic font-bold px-2 py-0.5 text-sm border border-comic-black transform -rotate-1">
                   {project.issueNumber}
                 </span>
-                <span className={`text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${project.category === 'Security' ? 'bg-red-100 text-red-800 border-red-800' : 'bg-blue-100 text-blue-800 border-blue-800'}`}>
-                  {project.category}
+                <span className={`text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${t(project.category) === t('category.security') ? 'bg-red-100 text-red-800 border-red-800' : 'bg-blue-100 text-blue-800 border-blue-800'}`}>
+                  {t(project.category)}
                 </span>
               </div>
               <h2 className="font-comic font-bold text-3xl md:text-4xl text-comic-black dark:text-white">
-                {project.title}
+                {t(project.title)}
               </h2>
             </div>
             <button 
               onClick={onClose}
               className="p-2 hover:bg-red-100 dark:hover:bg-red-900 rounded-full transition-colors group"
-              title='closeModal'
+              title={t('projectModal.closeModal')}
             >
               <X size={32} className="group-hover:rotate-90 transition-transform text-comic-black dark:text-white" />
             </button>
@@ -99,21 +101,21 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                     className={`w-full h-full object-cover transition-opacity duration-300 ${isAnimating ? 'opacity-80' : 'opacity-100'}`}
                   />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center text-gray-400">No Preview</div>
+                  <div className="w-full h-full flex items-center justify-center text-gray-400">{t('projectModal.noPreview')}</div>
                 )}
                 
                 {/* Carousel Controls */}
                 {project.screenshots.length > 1 && (
                   <>
                     <button 
-                      title="Previous Image"
+                      title={t('projectModal.previousImage')}
                       onClick={prevImage}
                       className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-comic-black p-2 rounded-full border-2 border-comic-black opacity-0 group-hover:opacity-100 transition-all shadow-sm"
                     >
                       <ChevronLeft size={24} />
                     </button>
                     <button 
-                      title="Next Image"
+                      title={t('projectModal.nextImage')}
                       onClick={nextImage}
                       className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-comic-black p-2 rounded-full border-2 border-comic-black opacity-0 group-hover:opacity-100 transition-all shadow-sm"
                     >
@@ -126,7 +128,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
                   {project.screenshots.map((_, idx) => (
                     <button 
-                      title='selectImage'
+                      title={t('projectModal.selectImage')}
                       key={idx}
                       onClick={() => {
                         setIsAnimating(true);
@@ -156,15 +158,15 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 {/* Story Arc */}
                 <div className="space-y-4 font-body text-comic-black dark:text-gray-300">
                   <p className="text-lg leading-relaxed">
-                    {project.longDescription || project.solution}
+                    {t(project.longDescription) || t(project.solution)}
                   </p>
                   
                   {project.features && (
                     <div className="bg-comic-paper dark:bg-gray-800/50 p-4 border-l-4 border-comic-yellow">
-                      <h4 className="font-comic font-bold text-lg mb-2 text-comic-black dark:text-white">Key Features:</h4>
+                      <h4 className="font-comic font-bold text-lg mb-2 text-comic-black dark:text-white">{t('projectModal.keyFeatures')}</h4>
                       <ul className="list-disc list-inside space-y-1 text-sm">
                         {project.features.map((feature, i) => (
-                          <li key={i}>{feature}</li>
+                          <li key={i}>{t(feature)}</li>
                         ))}
                       </ul>
                     </div>
@@ -172,12 +174,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
                   <div className="grid grid-cols-1 gap-4 pt-2">
                      <div className="bg-blue-50 dark:bg-blue-900/20 p-3 rounded border border-blue-200 dark:border-blue-800">
-                        <span className="font-bold text-xs uppercase text-blue-800 dark:text-blue-300 block mb-1">The Challenge</span>
-                        <p className="text-sm">{project.problem}</p>
+                        <span className="font-bold text-xs uppercase text-blue-800 dark:text-blue-300 block mb-1">{t('projectModal.theChallenge')}</span>
+                        <p className="text-sm">{t(project.problem)}</p>
                      </div>
                      <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded border border-green-200 dark:border-green-800">
-                        <span className="font-bold text-xs uppercase text-green-800 dark:text-green-300 block mb-1">The Solution</span>
-                        <p className="text-sm">{project.solution}</p>
+                        <span className="font-bold text-xs uppercase text-green-800 dark:text-green-300 block mb-1">{t('projectModal.theSolution')}</span>
+                        <p className="text-sm">{t(project.solution)}</p>
                      </div>
                   </div>
                 </div>
@@ -188,12 +190,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               <div className="mt-8 pt-6 border-t-2 border-dashed border-gray-300 dark:border-gray-700 grid grid-cols-2 gap-4">
                 <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="block">
                   <Button fullWidth className="flex justify-center items-center gap-2">
-                    <ExternalLink size={20} /> Live Demo
+                    <ExternalLink size={20} /> {t('projectModal.liveDemo')}
                   </Button>
                 </a>
                 <a href={project.links.repo} target="_blank" rel="noopener noreferrer" className="block">
                   <Button variant="secondary" fullWidth className="flex justify-center items-center gap-2">
-                    <Github size={20} /> Source
+                    <Github size={20} /> {t('projectModal.source')}
                   </Button>
                 </a>
               </div>

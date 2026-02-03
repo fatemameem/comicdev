@@ -2,8 +2,10 @@ import React from 'react';
 import { VOLUNTARY, ADDITIONAL } from '../../data/constants';
 import { ComicPanel } from '../ui/ComicPanel';
 import { Heart, Star } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export const Voluntary: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section id="voluntary" className="py-16 px-4 md:px-8 text-comic-black dark:text-comic-dark-text bg-comic-paper dark:bg-comic-dark-bg">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
@@ -12,14 +14,14 @@ export const Voluntary: React.FC = () => {
         <div className="space-y-6">
           <div className="flex items-center gap-3 mb-6">
             <Heart className="text-red-500 fill-current" size={28} />
-            <h3 className="font-comic font-bold text-3xl">Side Quests</h3>
+            <h3 className="font-comic font-bold text-3xl">{t('volunteer.sideQuests')}</h3>
           </div>
           
           {VOLUNTARY.map((vol) => (
             <ComicPanel key={vol.id} className="transform hover:-rotate-1 transition-transform">
-              <h4 className="font-comic font-bold text-xl">{vol.role}</h4>
-              <p className="text-sm font-bold text-gray-500 dark:text-gray-400 mb-2">@ {vol.organization}</p>
-              <p className="font-body text-sm">{vol.description}</p>
+              <h4 className="font-comic font-bold text-xl">{t(vol.role)}</h4>
+              <p className="text-sm font-bold text-gray-500 dark:text-gray-400 mb-2">@ {t(vol.organization)}</p>
+              <p className="font-body text-sm">{t(vol.description)}</p>
             </ComicPanel>
           ))}
         </div>
@@ -28,7 +30,7 @@ export const Voluntary: React.FC = () => {
         <div id="additional" className="space-y-6">
           <div className="flex items-center gap-3 mb-6">
             <Star className="text-comic-yellow fill-current stroke-black dark:stroke-gray-500" size={28} />
-            <h3 className="font-comic font-bold text-3xl">Bonus Content</h3>
+            <h3 className="font-comic font-bold text-3xl">{t('volunteer.bonusContent')}</h3>
           </div>
 
           <div className="bg-white dark:bg-comic-dark-paper border-2 border-comic-black dark:border-comic-gray p-6 shadow-comic dark:shadow-comic-dark relative">
@@ -40,7 +42,7 @@ export const Voluntary: React.FC = () => {
             <ul className="pl-12 space-y-4">
               {ADDITIONAL.map((item, i) => (
                 <li key={i} className="font-comic text-xl list-disc marker:text-comic-yellow">
-                  {item}
+                  {t(item)}
                 </li>
               ))}
             </ul>

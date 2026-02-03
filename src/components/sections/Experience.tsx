@@ -2,8 +2,10 @@ import React from 'react';
 import { EXPERIENCE } from '../../data/constants';
 import { ComicPanel } from '../ui/ComicPanel';
 import { Briefcase } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export const Experience: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section id="experience" className="py-16 px-4 md:px-8 bg-white dark:bg-comic-dark-paper border-y-2 border-comic-black dark:border-comic-gray transition-colors duration-300 text-comic-black dark:text-comic-dark-text">
       <div className="max-w-5xl mx-auto">
@@ -11,7 +13,7 @@ export const Experience: React.FC = () => {
           <div className="bg-comic-yellow p-3 border-2 border-comic-black dark:border-comic-gray shadow-comic dark:shadow-comic-dark rounded-full text-comic-black">
             <Briefcase size={32} />
           </div>
-          <h2 className="font-comic font-bold text-4xl">Chapter 2: Career Adventures</h2>
+          <h2 className="font-comic font-bold text-4xl">{t('experience.title')}</h2>
         </div>
 
         <div className="space-y-8">
@@ -25,7 +27,7 @@ export const Experience: React.FC = () => {
                 {/* Date Badge */}
                 <div className="md:w-5/12 mb-4 md:mb-0 flex justify-center">
                   <div className="inline-block bg-comic-black dark:bg-gray-800 text-white font-comic text-xl px-4 py-2 border-2 border-white dark:border-gray-600 shadow-comic dark:shadow-comic-dark transform -rotate-2">
-                    {job.period}
+                    {t(job.period)}
                   </div>
                 </div>
 
@@ -34,9 +36,9 @@ export const Experience: React.FC = () => {
 
                 {/* Content Card */}
                 <div className="md:w-5/12">
-                  <ComicPanel title={job.company} variant={job.id === 1 ? 'yellow' : 'white'}>
-                    <h3 className="font-bold text-xl mb-2">{job.role}</h3>
-                    <p className="font-body text-sm mb-4 opacity-90">{job.description}</p>
+                  <ComicPanel title={t(job.company)} variant={job.id === 1 ? 'yellow' : 'white'}>
+                    <h3 className="font-bold text-xl mb-2">{t(job.role)}</h3>
+                    <p className="font-body text-sm mb-4 opacity-90">{t(job.description)}</p>
                     <div className="flex flex-wrap gap-2">
                       {job.skills.map(skill => (
                         <span key={skill} className="text-xs font-bold font-comic border border-comic-black dark:border-comic-gray px-2 py-1 bg-white dark:bg-comic-dark-bg dark:text-comic-dark-text rounded-sm text-comic-black">
