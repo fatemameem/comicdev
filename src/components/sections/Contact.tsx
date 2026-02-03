@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComicPanel } from '../ui/ComicPanel';
 import { Button } from '../ui/Button';
-import { Send, Mail, Twitter, Linkedin } from 'lucide-react';
+import { Send, Mail, Linkedin, Github } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export const Contact: React.FC = () => {
@@ -51,7 +51,8 @@ export const Contact: React.FC = () => {
                 <h3 className="font-comic font-bold text-2xl">{t('contact.findMeElsewhere')}</h3>
                 <div className="flex gap-4">
                   <a href="#" className="bg-black dark:bg-gray-700 text-white p-3 rounded-full hover:bg-comic-yellow hover:text-black hover:scale-110 transition-all border-2 border-transparent hover:border-black dark:hover:border-white" title={t('contact.twitter')}>
-                    <Twitter size={24} />
+                    {/* <Twitter size={24} /> */}
+                    <Github size={24} />
                   </a>
                   <a href="#" className="bg-black dark:bg-gray-700 text-white p-3 rounded-full hover:bg-comic-yellow hover:text-black hover:scale-110 transition-all border-2 border-transparent hover:border-black dark:hover:border-white" title={t('contact.linkedin')}>
                     <Linkedin size={24} />

@@ -90,7 +90,7 @@ export const Projects: React.FC = () => {
         <div className="flex flex-wrap justify-center gap-3 mb-16">
           <button 
             onClick={() => setFilter('All')}
-            className={`font-comic font-bold px-4 py-2 border-2 border-comic-black dark:border-comic-gray rounded-full transition-all text-comic-black  ${filter === 'All' ? 'bg-comic-yellow shadow-comic-sm text-comic-black dark:text-comic-black scale-105' : 'bg-white dark:bg-comic-dark-paper hover:bg-gray-50 dark:hover:bg-gray-800 dark:text-comic-dark-text'}`}
+            className={`font-comic font-bold px-4 py-2 border-2 border-comic-black dark:border-comic-gray rounded-full transition-all text-comic-black cursor-pointer ${filter === 'All' ? 'bg-comic-yellow shadow-comic-sm text-comic-black dark:text-comic-black scale-105' : 'bg-white dark:bg-comic-dark-paper hover:bg-gray-50 dark:hover:bg-gray-800 dark:text-comic-dark-text'}`}
           >
             {t('projects.allIssues')}
           </button>
@@ -98,7 +98,7 @@ export const Projects: React.FC = () => {
             <button 
               key={tech}
               onClick={() => setFilter(tech)}
-              className={`flex items-center gap-2 font-comic text-sm font-bold px-3 py-1.5 border-2 border-comic-black dark:border-comic-gray rounded-full transition-all text-comic-black ${filter === tech ? 'bg-comic-yellow shadow-comic-sm text-comic-black dark:text-comic-black scale-105' : 'bg-white dark:bg-comic-dark-paper hover:bg-gray-50 dark:hover:bg-gray-800 dark:text-comic-dark-text'}`}
+              className={`flex items-center gap-2 font-comic text-sm font-bold px-3 py-1.5 border-2 border-comic-black dark:border-comic-gray rounded-full transition-all text-comic-black cursor-pointer ${filter === tech ? 'bg-comic-yellow shadow-comic-sm text-comic-black dark:text-comic-black scale-105' : 'bg-white dark:bg-comic-dark-paper hover:bg-gray-50 dark:hover:bg-gray-800 dark:text-comic-dark-text'}`}
             >
               <TechBadge name={tech} showLabel={false} className="opacity-80" />
               {tech}
