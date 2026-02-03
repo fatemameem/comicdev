@@ -6,6 +6,16 @@ import { TechBadge } from '../ui/TechBadge';
 import { ProjectModal } from '../ui/ProjectModal';
 import { useTranslation } from 'react-i18next';
 
+// Helper function to map category literals to translation keys
+const getCategoryTranslationKey = (category: string): string => {
+  switch (category) {
+    case 'Developer': return 'category.developer';
+    case 'Security': return 'category.security';
+    case 'Academic Research': return 'category.academic';
+    default: return category;
+  }
+};
+
 export const Projects: React.FC = () => {
   const { t } = useTranslation();
   const [filter, setFilter] = useState<string>('All');
@@ -17,9 +27,9 @@ export const Projects: React.FC = () => {
     ? PROJECTS 
     : PROJECTS.filter(p => p.techStack.includes(filter));
 
-  const developerProjects = filteredProjects.filter(p => t(p.category) === t('category.developer'));
-  const securityProjects = filteredProjects.filter(p => t(p.category) === t('category.security'));
-  const academicProjects = filteredProjects.filter(p => t(p.category) === t('category.academic'));
+  const developerProjects = filteredProjects.filter(p => t(getCategoryTranslationKey(p.category)) === t('category.developer'));
+  const securityProjects = filteredProjects.filter(p => t(getCategoryTranslationKey(p.category)) === t('category.security'));
+  const academicProjects = filteredProjects.filter(p => t(getCategoryTranslationKey(p.category)) === t('category.academic'));
 
   const ProjectCard = ({ project }: { project: ProjectItem }) => (
     <div 

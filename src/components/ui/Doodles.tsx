@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 
 export const ScribbleDivider = ({ className = "" }: { className?: string }) => (
   <svg className={`w-full h-8 ${className}`} viewBox="0 0 400 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">

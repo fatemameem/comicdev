@@ -78,7 +78,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: 1,
     title: "projects.technest.title",
-    category: "category.developer",
+    category: "Developer",
     issueNumber: "#01",
     problem: "projects.technest.problem",
     idea: "projects.technest.idea",
@@ -100,7 +100,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: 2,
     title: "projects.bdgsa.title",
-    category: "category.developer",
+    category: "Developer",
     issueNumber: "#02",
     problem: "projects.bdgsa.problem",
     idea: "projects.bdgsa.idea",
@@ -124,7 +124,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: 3,
     title: "projects.containerguard.title",
-    category: "category.security",
+    category: "Security",
     issueNumber: "#03",
     problem: "projects.containerguard.problem",
     idea: "projects.containerguard.idea",
@@ -145,7 +145,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: 4,
     title: "projects.malwaredefense.title",
-    category: "category.security",
+    category: "Security",
     issueNumber: "#04",
     problem: "projects.malwaredefense.problem",
     idea: "projects.malwaredefense.idea",
@@ -166,7 +166,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: 5,
     title: "projects.mealrecommender.title",
-    category: "category.academic",
+    category: "Academic Research",
     issueNumber: "#05",
     problem: "projects.mealrecommender.problem",
     idea: "projects.mealrecommender.idea",
@@ -186,7 +186,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: 6,
     title: "projects.dllinjection.title",
-    category: "category.security",
+    category: "Security",
     issueNumber: "#06",
     problem: "projects.dllinjection.problem",
     idea: "projects.dllinjection.idea",
@@ -209,7 +209,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: 7,
     title: "projects.marvelhangman.title",
-    category: "category.developer",
+    category: "Developer",
     issueNumber: "#07",
     problem: "projects.marvelhangman.problem",
     idea: "projects.marvelhangman.idea",
@@ -222,7 +222,7 @@ export const PROJECTS: ProjectItem[] = [
       "features.responsiveGameplay",
       "features.vanillaJsImplementation"
     ],
-    techStack: ["Vanilla JavaScript", "HTML", "CSS", "Game Development"],
+    techStack: ["JavaScript", "HTML", "CSS"],
     links: { demo: "#", repo: "#" },
     screenshots: [
       "https://picsum.photos/800/450?random=13",

@@ -6,6 +6,16 @@ import { TechBadge } from './TechBadge';
 import { ComicPanel } from './ComicPanel';
 import { useTranslation } from 'react-i18next';
 
+// Helper function to map category literals to translation keys
+const getCategoryTranslationKey = (category: string): string => {
+  switch (category) {
+    case 'Developer': return 'category.developer';
+    case 'Security': return 'category.security';
+    case 'Academic Research': return 'category.academic';
+    default: return category;
+  }
+};
+
 interface ProjectModalProps {
   project: ProjectItem;
   onClose: () => void;
@@ -69,8 +79,8 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 <span className="bg-comic-yellow text-comic-black font-comic font-bold px-2 py-0.5 text-sm border border-comic-black transform -rotate-1">
                   {project.issueNumber}
                 </span>
-                <span className={`text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${t(project.category) === t('category.security') ? 'bg-red-100 text-red-800 border-red-800' : 'bg-blue-100 text-blue-800 border-blue-800'}`}>
-                  {t(project.category)}
+                <span className={`text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${t(getCategoryTranslationKey(project.category)) === t('category.security') ? 'bg-red-100 text-red-800 border-red-800' : 'bg-blue-100 text-blue-800 border-blue-800'}`}>
+                  {t(getCategoryTranslationKey(project.category))}
                 </span>
               </div>
               <h2 className="font-comic font-bold text-3xl md:text-4xl text-comic-black dark:text-white">
@@ -158,7 +168,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 {/* Story Arc */}
                 <div className="space-y-4 font-body text-comic-black dark:text-gray-300">
                   <p className="text-lg leading-relaxed">
-                    {t(project.longDescription) || t(project.solution)}
+                    {project.longDescription ? t(project.longDescription) : t(project.solution)}
                   </p>
                   
                   {project.features && (

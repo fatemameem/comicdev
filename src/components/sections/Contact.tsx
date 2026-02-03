@@ -38,6 +38,7 @@ export const Contact: React.FC = () => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target as HTMLFormElement, PUBLIC_KEY)
       .then((result) => {
+        console.log(result.text);
         showNotification(t('contact.messageSuccess'), 'success');
       }, (error) => {
         console.log(error.text);
