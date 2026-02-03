@@ -173,14 +173,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   )}
 
                   <div className="grid grid-cols-1 gap-4 pt-2">
-                     <div className="bg-blue-50 dark:bg-blue-900/20 p-3 rounded border border-blue-200 dark:border-blue-800">
-                        <span className="font-bold text-xs uppercase text-blue-800 dark:text-blue-300 block mb-1">{t('projectModal.theChallenge')}</span>
-                        <p className="text-sm">{t(project.problem)}</p>
-                     </div>
-                     <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded border border-green-200 dark:border-green-800">
-                        <span className="font-bold text-xs uppercase text-green-800 dark:text-green-300 block mb-1">{t('projectModal.theSolution')}</span>
-                        <p className="text-sm">{t(project.solution)}</p>
-                     </div>
+                    <div className="bg-blue-50 dark:bg-blue-900/20 p-3 rounded border border-blue-200 dark:border-blue-800">
+                      <span className="font-bold text-xs uppercase text-blue-800 dark:text-blue-300 block mb-1">{t('projectModal.theChallenge')}</span>
+                      <p className="text-sm">{t(project.problem)}</p>
+                    </div>
+                    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded border border-green-200 dark:border-green-800">
+                      <span className="font-bold text-xs uppercase text-green-800 dark:text-green-300 block mb-1">{t('projectModal.theSolution')}</span>
+                      <p className="text-sm">{t(project.solution)}</p>
+                    </div>
                   </div>
                 </div>
 
