@@ -30,15 +30,19 @@ export interface EducationItem {
 export interface ProjectItem {
   id: number;
   title: string;
+  category: 'Developer' | 'Security';
   issueNumber: string;
   problem: string;
   idea: string;
   solution: string;
+  longDescription?: string;
+  features?: string[];
   techStack: string[];
   links: {
     demo: string;
     repo: string;
   };
+  screenshots: string[];
 }
 
 export interface VoluntaryItem {

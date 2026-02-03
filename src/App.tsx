@@ -4,6 +4,7 @@ import { Footer } from './components/Footer'
 import { Hero } from './components/sections/Hero'
 import { Education } from './components/sections/Education'
 import { Experience } from './components/sections/Experience'
+import { Projects } from './components/sections/Projects'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Education />
         <Experience />
+        <Projects/>
       </main>
       <Footer/>
     </div>
