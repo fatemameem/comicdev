@@ -83,7 +83,7 @@ export const Hero: React.FC = () => {
         </div>
 
       </div>
-      <img src="/snoopy/snoopy-bg.png"  alt="Snoopy Background" className="hidden md:block absolute min-h-screen top-10 left-0 opacity-5 dark:opacity-5 z-0" />
+      {/* <img src="/snoopy/snoopy-bg.png"  alt="Snoopy Background" className="hidden md:block absolute min-h-screen top-10 left-0 opacity-5 dark:opacity-5 z-0" /> */}
     </section>
   );
 };

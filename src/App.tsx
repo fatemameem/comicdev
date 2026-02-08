@@ -19,8 +19,8 @@ function App() {
         <Education />
         <Experience />
         <Projects/>
-        <Voluntary/>
         <AdditionalExperience />
+        <Voluntary/>
         <Contact/>
       </main>
       <Footer/>
