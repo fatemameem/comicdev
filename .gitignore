@@ -28,3 +28,7 @@ dist-ssr
 .env.development.local
 .env.test.local
 .env.production.local
+
+/public/screenshots/*.png
+/public/screenshots/*.jpg
+/public/screenshots/*.jpeg

@@ -93,8 +93,8 @@ export const PROJECTS: ProjectItem[] = [
     techStack: ["Next.js", "TypeScript", "Google Sheets API", "Admin Dashboard", "PayloadCMS", "HTML", "Tailwind", "CSS", "Framer Motion"],
     links: { demo: "#", repo: "#" },
     screenshots: [
-      "https://picsum.photos/800/450?random=4",
-      "https://picsum.photos/800/450?random=5"
+      "/screenshots/technest-ss1.webp",
+      "/screenshots/technest-ss2.webp"
     ]
   },
   {
@@ -115,9 +115,8 @@ export const PROJECTS: ProjectItem[] = [
     techStack: ["Next.js", "TypeScript", "JWT", "REST API", "Tailwind", "Framer Motion"],
     links: { demo: "#", repo: "#" },
     screenshots: [
-      "https://picsum.photos/800/450?random=1",
-      "https://picsum.photos/800/450?random=2",
-      "https://picsum.photos/800/450?random=3"
+      "/screenshots/bdgsa-ss1.webp",
+      "/screenshots/bdgsa-ss2.webp"
     ]
   },
   // Security Projects
