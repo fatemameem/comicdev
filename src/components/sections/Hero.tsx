@@ -3,6 +3,7 @@ import { ComicPanel } from '../ui/ComicPanel';
 import { Button } from '../ui/Button';
 import { ArrowRight, Download } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import TextType from '../ui/TextType';
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -30,16 +31,32 @@ export const Hero: React.FC = () => {
             </div>
 
             <div className="space-y-4">
-            <h1 className="font-comic font-bold text-5xl md:text-7xl leading-tight dark:text-comic-paper text-comic-black">
-              {t('hero.mainTitle')} <span className="relative inline-block dark:text-comic-paper text-comic-black">
-                <span className="relative z-10 text-comic-yellow dark:text-comic-paper">{t('hero.websites')}</span>
-                <svg className="absolute bottom-1 left-0 w-full h-3 text-comic-black dark:text-comic-yellow z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 15 100 5" stroke="currentColor" strokeWidth="15" fill="none"/></svg>
-              </span> {t('hero.tellStories')}
-            </h1>
-            <p className="font-body text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-lg">
-              {t('hero.subtitle')}
-            </p>
-          </div>
+              <h1 className="font-comic font-bold text-4xl md:text-6xl leading-tight dark:text-comic-paper text-comic-black">
+                <TextType 
+                  text={["Fatema Ahsan Meem"]}
+                  typingSpeed={75}
+                  pauseDuration={1500}
+                  showCursor
+                  cursorCharacter="_"
+                  deletingSpeed={80}
+                  variableSpeedEnabled={false}
+                  variableSpeedMin={60}
+                  variableSpeedMax={120}
+                  cursorBlinkDuration={0.5}
+                />
+              </h1>
+            </div>
+            <div className="space-y-4">
+              <h1 className="font-comic font-bold text-2xl md:text-4xl leading-tight dark:text-comic-paper text-comic-black">
+                {t('hero.mainTitle')} <span className="relative inline-block dark:text-comic-paper text-comic-black">
+                  <span className="relative z-10 text-comic-yellow dark:text-comic-paper">{t('hero.websites')}</span>
+                  <svg className="absolute bottom-1 left-0 w-full h-1 md:h-2 text-comic-black dark:text-comic-yellow z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 15 100 5" stroke="currentColor" strokeWidth="12" fill="none"/></svg>
+                </span> {t('hero.tellStories')}
+              </h1>
+              <p className="font-body text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-lg">
+                {t('hero.subtitle')}
+              </p>
+            </div>
 
           <div className="flex flex-wrap items-end gap-4 pt-4">
             <Button onClick={scrollToProjects} className="flex items-center gap-2 cursor-pointer">
