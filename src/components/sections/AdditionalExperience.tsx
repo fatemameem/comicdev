@@ -18,7 +18,7 @@ export const AdditionalExperience: React.FC = () => {
 
         <div className="space-y-8">
           {ADDITIONAL_EXPERIENCE.map((job) => (
-            <div key={job.id} className="relative pl-8 md:pl-0">
+            <div key={job.id} className="relative">
               {/* Timeline Line (Desktop) */}
               <div className="hidden md:block absolute left-[50%] top-0 bottom-0 w-1 bg-comic-black dark:bg-gray-600 transform -translate-x-1/2 -z-10 border-l-2 border-r-2 border-comic-black dark:border-gray-600 h-full"></div>
 

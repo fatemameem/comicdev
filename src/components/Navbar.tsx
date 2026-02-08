@@ -49,7 +49,7 @@ export const Navbar: React.FC = () => {
           className="font-comic font-bold text-2xl cursor-pointer relative group text-comic-black dark:text-comic-dark-text"
           onClick={() => scrollTo('about')}
         >
-          <span className="relative z-10">DEV<span className="text-comic-yellow text-outline-black">STRIP</span></span>
+          <span className="relative z-10 uppercase">fatema<span className="text-comic-yellow text-outline-black uppercase">{' '}meem</span></span>
           <svg className="absolute -bottom-1 -left-1 w-full h-3 text-comic-yellow opacity-0 group-hover:opacity-100 transition-opacity z-0" viewBox="0 0 100 10" preserveAspectRatio="none">
               <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
           </svg>
@@ -82,8 +82,6 @@ export const Navbar: React.FC = () => {
           {/* <button onClick={toggleTheme} className="text-comic-black dark:text-comic-dark-text">
             {isDark ? <Sun size={24} /> : <Moon size={24} />}
           </button> */}
-          <LanguageToggle />
-          <ThemeToggle/>
           <button className="text-comic-black dark:text-comic-dark-text" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -104,6 +102,10 @@ export const Navbar: React.FC = () => {
               {t(item.label)}
             </button>
           ))}
+          <div className="py-2 px-4 flex items-center gap-4 font-comic">
+            <ThemeToggle/>
+            <LanguageToggle />
+          </div>
         </div>
       )}
     </nav>

@@ -98,14 +98,14 @@ export const Contact: React.FC = () => {
               <div className="flex flex-col md:flex-row justify-start items-center gap-4">
                   <h3 className="font-comic font-bold text-2xl">{t('contact.findMeElsewhere')}</h3>
                   <div className="flex gap-4">
-                    <a href="#" className="bg-black dark:bg-gray-700 text-white p-3 rounded-full hover:bg-comic-yellow hover:text-black hover:scale-110 transition-all border-2 border-transparent hover:border-black dark:hover:border-white" title={t('contact.twitter')}>
+                    <a href="https://github.com/fatemameem" target="_blank" rel="noopener noreferrer" className="bg-black dark:bg-gray-700 text-white p-3 rounded-full hover:bg-comic-yellow hover:text-black hover:scale-110 transition-all border-2 border-transparent hover:border-black dark:hover:border-white" title={t('contact.github')}>
                       {/* <Twitter size={24} /> */}
                       <Github size={24} />
                     </a>
-                    <a href="#" className="bg-black dark:bg-gray-700 text-white p-3 rounded-full hover:bg-comic-yellow hover:text-black hover:scale-110 transition-all border-2 border-transparent hover:border-black dark:hover:border-white" title={t('contact.linkedin')}>
+                    <a href="https://www.linkedin.com/in/fatema-meem/" target="_blank" rel="noopener noreferrer" className="bg-black dark:bg-gray-700 text-white p-3 rounded-full hover:bg-comic-yellow hover:text-black hover:scale-110 transition-all border-2 border-transparent hover:border-black dark:hover:border-white" title={t('contact.linkedin')}>
                       <Linkedin size={24} />
                     </a>
-                    <a href="#" className="bg-black dark:bg-gray-700 text-white p-3 rounded-full hover:bg-comic-yellow hover:text-black hover:scale-110 transition-all border-2 border-transparent hover:border-black dark:hover:border-white" title={t('contact.mail')}>
+                    <a href="mailto:fatemameem97@gmail.com" target="_blank" rel="noopener noreferrer" className="bg-black dark:bg-gray-700 text-white p-3 rounded-full hover:bg-comic-yellow hover:text-black hover:scale-110 transition-all border-2 border-transparent hover:border-black dark:hover:border-white" title={t('contact.mail')}>
                       <Mail size={24} />
                     </a>
                   </div>

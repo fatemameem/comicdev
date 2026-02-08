@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComicPanel } from '../ui/ComicPanel';
 import { Button } from '../ui/Button';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import TextType from '../ui/TextType';
 
@@ -65,7 +65,7 @@ export const Hero: React.FC = () => {
             <Button variant="secondary" onClick={scrollToContact} className="flex items-center gap-2 cursor-pointer">
               {t('hero.letsTalk')}
             </Button>
-            <a title='projects' href="#" className="hidden md:block">
+            <a title='projects' href="/Fatema_Ahsan_Meem_Resume.pdf" target='_blank' className="block">
               <Button variant="outline" className="flex items-center gap-2 cursor-pointer" title="Download Resume">
                 <Download size={20} />
               </Button>
@@ -78,18 +78,32 @@ export const Hero: React.FC = () => {
           <ComicPanel title={t('hero.protagonist')} className="transform rotate-2 hover:rotate-0 transition-transform duration-300 z-20">
             <div className="aspect-square bg-gray-100 dark:bg-gray-800 border-2 border-comic-black dark:border-comic-gray border-dashed flex items-center justify-center relative overflow-hidden">
                 <img 
-                  src="https://picsum.photos/600/600?grayscale" 
+                  src="/profile-img.png" 
                   alt="Developer Portrait" 
-                  className="w-full h-full object-cover mix-blend-multiply dark:mix-blend-normal dark:opacity-70 opacity-80 hover:opacity-100 transition-opacity"
+                  className="w-full h-full object-fill mix-blend-multiply dark:mix-blend-normal"
                 />
                 <div className="absolute bottom-4 right-4 bg-comic-yellow border-2 border-comic-black px-3 py-1 font-comic font-bold text-sm transform -rotate-6 shadow-sm text-comic-black">
                   {t('hero.frontendWizard')}
                 </div>
             </div>
-            <div className="mt-4 font-body text-sm space-y-2 text-comic-black dark:text-comic-paper">
-              <p><strong>{t('hero.name')}</strong> {t('hero.nameValue')}</p>
-              <p><strong>{t('hero.level')}</strong> {t('hero.levelValue')}</p>
-              <p><strong>{t('hero.superpower')}</strong> {t('hero.superpowerValue')}</p>
+            <div className="mt-4 font-body text-base space-y-2 text-comic-black dark:text-comic-paper">
+              <div className="flex flex-col lg:flex-row items-start md:items-center justify-between gap-4">
+                <p className='order-2 lg:order-1'><strong>{t('hero.name')}</strong> {t('hero.nameValue')}</p>
+                <div className="flex justify-end items-center gap-4 order-1 lg:order-2">
+                  <a href="https://github.com/fatemameem" target="_blank" rel="noopener noreferrer" className="bg-comic-paper dark:bg-comic-dark-bg dark:text-comic-paper text-comic-black p-2 rounded-full hover:bg-comic-yellow hover:text-black hover:scale-110 transition-all border-2 border-comic-yellow hover:border-black dark:hover:border-white" title={t('contact.github')}>
+                    {/* <Twitter size={24} /> */}
+                    <Github size={18} />
+                  </a>
+                  <a href="https://www.linkedin.com/in/fatema-meem/" target="_blank" rel="noopener noreferrer" className="bg-comic-paper dark:bg-comic-dark-bg dark:text-comic-paper text-comic-black p-2 rounded-full hover:bg-comic-yellow hover:text-black hover:scale-110 transition-all border-2 border-comic-yellow hover:border-black dark:hover:border-white" title={t('contact.linkedin')}>
+                    <Linkedin size={18} />
+                  </a>
+                  <a href="mailto:fatemameem97@gmail.com" target="_blank" rel="noopener noreferrer" className="bg-comic-paper dark:bg-comic-dark-bg dark:text-comic-paper text-comic-black p-2 rounded-full hover:bg-comic-yellow hover:text-black hover:scale-110 transition-all border-2 border-comic-yellow hover:border-black dark:hover:border-white" title={t('contact.mail')}>
+                    <Mail size={18} />
+                  </a>
+                </div>
+              </div>
+              <p className=''><strong>{t('hero.level')}</strong> {t('hero.levelValue')}</p>
+              <p className='mt-4'><strong>{t('hero.superpower')}</strong> {t('hero.superpowerValue')}</p>
             </div>
           </ComicPanel>
           
