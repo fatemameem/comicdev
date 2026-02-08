@@ -79,8 +79,8 @@ export const Hero: React.FC = () => {
             <div className="aspect-square bg-gray-100 dark:bg-gray-800 border-2 border-comic-black dark:border-comic-gray border-dashed flex items-center justify-center relative overflow-hidden">
                 <picture>
                   <source 
-                    srcSet="/profile-img-400.webp 400w, /profile-img-600.webp 600w, /profile-img-800.webp 800w"
-                    sizes="(max-width: 768px) 400px, (max-width: 1024px) 600px, 800px"
+                    srcSet="/profile-img-400.webp 400w, /profile-img-600.webp 600w, /profile-img-600.webp 800w"
+                    sizes="(max-width: 768px) 400px, (max-width: 1024px) 600px, 600px"
                     type="image/webp"
                   />
                   <img 
