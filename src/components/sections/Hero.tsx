@@ -77,11 +77,21 @@ export const Hero: React.FC = () => {
         <div className="md:col-span-5 relative">
           <ComicPanel title={t('hero.protagonist')} className="transform rotate-2 hover:rotate-0 transition-transform duration-300 z-20">
             <div className="aspect-square bg-gray-100 dark:bg-gray-800 border-2 border-comic-black dark:border-comic-gray border-dashed flex items-center justify-center relative overflow-hidden">
-                <img 
-                  src="/profile-img.png" 
-                  alt="Developer Portrait" 
-                  className="w-full h-full object-fill mix-blend-multiply dark:mix-blend-normal"
-                />
+                <picture>
+                  <source 
+                    srcSet="/profile-img-400.webp 400w, /profile-img-600.webp 600w, /profile-img-800.webp 800w"
+                    sizes="(max-width: 768px) 400px, (max-width: 1024px) 600px, 800px"
+                    type="image/webp"
+                  />
+                  <img 
+                    src="/profile-img-600.jpg" 
+                    alt="Developer Portrait" 
+                    className="w-full h-full object-fill mix-blend-multiply dark:mix-blend-normal"
+                    loading="lazy"
+                    width="600"
+                    height="600"
+                  />
+                </picture>
                 <div className="absolute bottom-4 right-4 bg-comic-yellow border-2 border-comic-black px-3 py-1 font-comic font-bold text-sm transform -rotate-6 shadow-sm text-comic-black">
                   {t('hero.frontendWizard')}
                 </div>
