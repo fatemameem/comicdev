@@ -17,6 +17,12 @@ export interface ExperienceItem {
   period: string;
   description: string;
   skills: string[];
+  responsibilities?: string[];
+  achievements?: string[];
+  projectLinks?: {
+    title: string;
+    url: string;
+  }[];
 }
 
 export interface EducationItem {

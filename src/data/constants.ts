@@ -34,7 +34,28 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: "experience.company.bevy",
     period: "period.jun2021Dec2021",
     description: "experience.desc.bevy",
-    skills: ["React", "Shopify", "Next.js", "Performance"]
+    skills: ["React", "Shopify", "Next.js", "Performance", "JavaScript", "CSS"],
+    responsibilities: [
+      "experience.bevy.resp1",
+      "experience.bevy.resp2",
+      "experience.bevy.resp3",
+      "experience.bevy.resp4"
+    ],
+    achievements: [
+      "experience.bevy.achievement1",
+      "experience.bevy.achievement2",
+      "experience.bevy.achievement3"
+    ],
+    projectLinks: [
+      {
+        title: "experience.bevy.project1",
+        url: "#"
+      },
+      {
+        title: "experience.bevy.project2",
+        url: "#"
+      }
+    ]
   },
   {
     id: 2,
@@ -42,7 +63,24 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: "experience.company.technest",
     period: "period.sep2024Present",
     description: "experience.desc.technest",
-    skills: ["Vue.js", "SCSS", "GSAP", "Accessibility"]
+    skills: ["Vue.js", "SCSS", "GSAP", "Accessibility", "TypeScript", "Next.js"],
+    responsibilities: [
+      "experience.technest.resp1",
+      "experience.technest.resp2",
+      "experience.technest.resp3",
+      "experience.technest.resp4"
+    ],
+    achievements: [
+      "experience.technest.achievement1",
+      "experience.technest.achievement2",
+      "experience.technest.achievement3"
+    ],
+    projectLinks: [
+      {
+        title: "experience.technest.project1",
+        url: "#"
+      }
+    ]
   }
 ];
 

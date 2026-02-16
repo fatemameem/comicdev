@@ -34,12 +34,40 @@ export default {
       "education.details.concordia": "Programme intensif de 12 semaines couvrant React, Node.js et Infrastructure Cloud.",
 
       // Experience
+      "experience.title": "Chapitre 2: Aventures Professionnelles",
+      "experience.readMore": "Lire Plus",
       "experience.role.frontend": "Développeur Frontend",
       "experience.company.bevy": "Bevy Commerce",
       "experience.desc.bevy": "Direction de l'initiative de refonte de l'interface. Amélioration des performances de 40% grâce au fractionnement de code et à l'optimisation des ressources. Mentorat de développeurs junior.",
+      "experience.bevy.resp1": "Dirigé les projets de refonte UI/UX pour les plateformes e-commerce utilisant React et Next.js",
+      "experience.bevy.resp2": "Implémenté des optimisations de performance incluant le fractionnement de code et le chargement paresseux",
+      "experience.bevy.resp3": "Collaboré avec les équipes backend pour intégrer les APIs Shopify et solutions personnalisées",
+      "experience.bevy.resp4": "Mentoré les développeurs juniors et effectué des revues de code",
+      "experience.bevy.achievement1": "Amélioré le temps de chargement du site de 40% grâce à l'optimisation des ressources et au fractionnement de code",
+      "experience.bevy.achievement2": "Lancé avec succès plus de 5 projets clients dans les délais sans bugs critiques",
+      "experience.bevy.achievement3": "Implémenté des modèles de conception adaptative augmentant la conversion mobile de 25%",
+      "experience.bevy.project1": "Refonte de Plateforme E-commerce",
+      "experience.bevy.project2": "Développement de Thème Shopify",
+
       "experience.role.webdev": "Développeur Web (Bénévole)",
       "experience.company.technest": "TECHNEST Canada",
       "experience.desc.technest": "Création de sites web adaptatifs pour plus de 20 clients. Collaboration étroite avec les designers pour implémenter des animations au pixel près.",
+      "experience.technest.resp1": "Développer et maintenir des applications web adaptatives utilisant Vue.js et Next.js",
+      "experience.technest.resp2": "Créer des composants UI accessibles et performants suivant les directives WCAG",
+      "experience.technest.resp3": "Implémenter des animations et interactions complexes utilisant GSAP",
+      "experience.technest.resp4": "Intégrer l'API Google Sheets et solutions CMS personnalisées pour la gestion de contenu",
+      "experience.technest.achievement1": "Construit et déployé plus de 20 sites web clients avec un taux de satisfaction de 100%",
+      "experience.technest.achievement2": "Implémenté des fonctionnalités d'accessibilité atteignant la conformité WCAG 2.1 AA",
+      "experience.technest.achievement3": "Créé une bibliothèque de composants réutilisables réduisant le temps de développement de 30%",
+      "experience.technest.project1": "Plateforme Tech-Nest Canada",
+
+      // Experience Modal
+      "experienceModal.closeModal": "Fermer la Modale",
+      "experienceModal.responsibilities": "Responsabilités Clés",
+      "experienceModal.achievements": "Réalisations Majeures",
+      "experienceModal.techStack": "Technologies Utilisées",
+      "experienceModal.relatedProjects": "Projets Associés",
+      "experienceModal.close": "Fermer",
 
       // Additional Experience
       "additionalExperience.title": "Chapitre 3: Expérience Additionnelle",
