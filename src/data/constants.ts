@@ -91,7 +91,7 @@ export const PROJECTS: ProjectItem[] = [
       "features.globalStateManagement"
     ],
     techStack: ["Next.js", "TypeScript", "Google Sheets API", "Admin Dashboard", "PayloadCMS", "HTML", "Tailwind", "CSS", "Framer Motion"],
-    links: { demo: "#", repo: "#" },
+    links: { demo: "https://tech-nest.communicatingtech.com/", repo: "https://github.com/fatemameem/technest-can-frontend" },
     screenshots: [
       "/screenshots/technest-ss1.webp",
       "/screenshots/technest-ss2.webp"
@@ -113,7 +113,7 @@ export const PROJECTS: ProjectItem[] = [
       "features.restApiIntegration"
     ],
     techStack: ["Next.js", "TypeScript", "JWT", "REST API", "Tailwind", "Framer Motion"],
-    links: { demo: "#", repo: "#" },
+    links: { demo: "https://bdgsa.vercel.app/", repo: "https://github.com/fatemameem/kampus_frontend/tree/demo" },
     screenshots: [
       "/screenshots/bdgsa-ss1.webp",
       "/screenshots/bdgsa-ss2.webp"
@@ -156,10 +156,10 @@ export const PROJECTS: ProjectItem[] = [
       "features.legacyDefense"
     ],
     techStack: ["Ghidra", "Python", "Reverse Engineering", "Vulnerability Detection"],
-    links: { demo: "#", repo: "#" },
+    links: { demo: "https://github.com/fatemameem/InjecHunter", repo: "https://github.com/fatemameem/InjecHunter/blob/main/Malicious%20DLL%20Injection%20Detection%20using%20Ghidra-%20A%20Static%20Code%20Analysis%20Process.pdf" },
     screenshots: [
-      "https://picsum.photos/800/450?random=8",
-      "https://picsum.photos/800/450?random=9"
+      "/screenshots/injechunter-ss1.webp",
+      "/screenshots/injechunter-ss2.webp"
     ]
   },
   {
@@ -199,10 +199,11 @@ export const PROJECTS: ProjectItem[] = [
       "features.reverseEngineeringWorkflow"
     ],
     techStack: ["Ghidra", "Python", "Static Analysis", "Binary Analysis", "Malware Detection"],
-    links: { demo: "#", repo: "#" },
+    links: { demo: "https://github.com/fatemameem/InjecHunter", repo: "https://github.com/fatemameem/InjecHunter/blob/main/Malicious%20DLL%20Injection%20Detection%20using%20Ghidra-%20A%20Static%20Code%20Analysis%20Process.pdf" },
     screenshots: [
-      "https://picsum.photos/800/450?random=11",
-      "https://picsum.photos/800/450?random=12"
+      "/screenshots/injechunter-ss3.webp",
+      "/screenshots/injechunter-ss1.webp",
+      "/screenshots/injechunter-ss2.webp"
     ]
   },
   {
@@ -222,10 +223,10 @@ export const PROJECTS: ProjectItem[] = [
       "features.vanillaJsImplementation"
     ],
     techStack: ["JavaScript", "HTML", "CSS"],
-    links: { demo: "#", repo: "#" },
+    links: { demo: "https://hangvel.vercel.app", repo: "https://github.com/fatemameem/Marvel-Hangman-with-JS-HTML-CSS" },
     screenshots: [
-      "https://picsum.photos/800/450?random=13",
-      "https://picsum.photos/800/450?random=14"
+      "/screenshots/hangman-ss1.webp",
+      "/screenshots/hangman-ss3.webp"
     ]
   }
 ];
