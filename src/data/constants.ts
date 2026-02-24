@@ -34,7 +34,28 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: "experience.company.bevy",
     period: "period.jun2021Dec2021",
     description: "experience.desc.bevy",
-    skills: ["React", "Shopify", "Next.js", "Performance"]
+    skills: ["React", "Shopify", "Next.js", "Performance", "JavaScript", "CSS"],
+    responsibilities: [
+      "experience.bevy.resp1",
+      "experience.bevy.resp2",
+      "experience.bevy.resp3",
+      "experience.bevy.resp4"
+    ],
+    achievements: [
+      "experience.bevy.achievement1",
+      "experience.bevy.achievement2",
+      "experience.bevy.achievement3"
+    ],
+    projectLinks: [
+      {
+        title: "experience.bevy.project1",
+        url: "https://www.bevycommerce.com/rubino/"
+      },
+      {
+        title: "experience.bevy.project2",
+        url: "https://www.bevycommerce.com/burke-decor/"
+      }
+    ]
   },
   {
     id: 2,
@@ -42,7 +63,24 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: "experience.company.technest",
     period: "period.sep2024Present",
     description: "experience.desc.technest",
-    skills: ["Vue.js", "SCSS", "GSAP", "Accessibility"]
+    skills: ["Next.js", "SCSS", "GSAP", "Accessibility", "TypeScript", "Google Sheets API"],
+    responsibilities: [
+      "experience.technest.resp1",
+      "experience.technest.resp2",
+      "experience.technest.resp3",
+      "experience.technest.resp4"
+    ],
+    achievements: [
+      "experience.technest.achievement1",
+      "experience.technest.achievement2",
+      "experience.technest.achievement3"
+    ],
+    projectLinks: [
+      {
+        title: "experience.technest.project1",
+        url: "https://tech-nest.communicatingtech.com/"
+      }
+    ]
   }
 ];
 
@@ -120,32 +158,31 @@ export const PROJECTS: ProjectItem[] = [
     ]
   },
   // Security Projects
+  // {
+  //   id: 3,
+  //   title: "projects.containerguard.title",
+  //   category: "Security",
+  //   issueNumber: "#03",
+  //   problem: "projects.containerguard.problem",
+  //   idea: "projects.containerguard.idea",
+  //   solution: "projects.containerguard.solution",
+  //   longDescription: "projects.containerguard.longDescription",
+  //   features: [
+  //     "features.containerIsolation",
+  //     "features.attackSimulation",
+  //     "features.readOnlyFilesystem"
+  //   ],
+  //   techStack: ["Docker", "Security Testing", "Network Isolation", "Privilege Control"],
+  //   links: { demo: "#", repo: "#" },
+  //   screenshots: [
+  //     "/screenshots/docker-logo-blue.svg"
+  //   ]
+  // },
   {
     id: 3,
-    title: "projects.containerguard.title",
-    category: "Security",
-    issueNumber: "#03",
-    problem: "projects.containerguard.problem",
-    idea: "projects.containerguard.idea",
-    solution: "projects.containerguard.solution",
-    longDescription: "projects.containerguard.longDescription",
-    features: [
-      "features.containerIsolation",
-      "features.attackSimulation",
-      "features.readOnlyFilesystem"
-    ],
-    techStack: ["Docker", "Security Testing", "Network Isolation", "Privilege Control"],
-    links: { demo: "#", repo: "#" },
-    screenshots: [
-      "https://picsum.photos/800/450?random=6",
-      "https://picsum.photos/800/450?random=7"
-    ]
-  },
-  {
-    id: 4,
     title: "projects.malwaredefense.title",
     category: "Security",
-    issueNumber: "#04",
+    issueNumber: "#03",
     problem: "projects.malwaredefense.problem",
     idea: "projects.malwaredefense.idea",
     solution: "projects.malwaredefense.solution",
@@ -156,17 +193,16 @@ export const PROJECTS: ProjectItem[] = [
       "features.legacyDefense"
     ],
     techStack: ["Ghidra", "Python", "Reverse Engineering", "Vulnerability Detection"],
-    links: { demo: "https://github.com/fatemameem/InjecHunter", repo: "https://github.com/fatemameem/InjecHunter/blob/main/Malicious%20DLL%20Injection%20Detection%20using%20Ghidra-%20A%20Static%20Code%20Analysis%20Process.pdf" },
+    links: { demo: "#", repo: "#" },
     screenshots: [
-      "/screenshots/injechunter-ss1.webp",
-      "/screenshots/injechunter-ss2.webp"
+      "/screenshots/malware-ss1.webp",
     ]
   },
   {
-    id: 5,
+    id: 4,
     title: "projects.mealrecommender.title",
     category: "Academic Research",
-    issueNumber: "#05",
+    issueNumber: "#04",
     problem: "projects.mealrecommender.problem",
     idea: "projects.mealrecommender.idea",
     solution: "projects.mealrecommender.solution",
@@ -183,10 +219,10 @@ export const PROJECTS: ProjectItem[] = [
     ]
   },
   {
-    id: 6,
+    id: 5,
     title: "projects.dllinjection.title",
     category: "Security",
-    issueNumber: "#06",
+    issueNumber: "#05",
     problem: "projects.dllinjection.problem",
     idea: "projects.dllinjection.idea",
     solution: "projects.dllinjection.solution",
@@ -207,10 +243,10 @@ export const PROJECTS: ProjectItem[] = [
     ]
   },
   {
-    id: 7,
+    id: 6,
     title: "projects.marvelhangman.title",
     category: "Developer",
-    issueNumber: "#07",
+    issueNumber: "#06",
     problem: "projects.marvelhangman.problem",
     idea: "projects.marvelhangman.idea",
     solution: "projects.marvelhangman.solution",

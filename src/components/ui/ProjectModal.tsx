@@ -197,17 +197,80 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               </div>
 
               {/* Footer Actions */}
-              <div className="mt-8 pt-6 border-t-2 border-dashed border-gray-300 dark:border-gray-700 grid grid-cols-2 gap-4">
-                <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="block">
-                  <Button fullWidth className="flex justify-center items-center gap-2">
-                    <ExternalLink size={20} /> {t('projectModal.liveDemo')}
-                  </Button>
-                </a>
-                <a href={project.links.repo} target="_blank" rel="noopener noreferrer" className="block">
-                  <Button variant="secondary" fullWidth className="flex justify-center items-center gap-2">
-                    <Github size={20} /> {t('projectModal.source')}
-                  </Button>
-                </a>
+              <div className="mt-8 pt-6 border-t-2 border-dashed border-gray-300 dark:border-gray-700">
+                {project.links.demo && project.links.repo && project.links.demo.trim() !== '#' && project.links.repo.trim() !== '#' ? (
+                  // Both links available - show both buttons
+                  <div className="grid grid-cols-2 gap-4">
+                    <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="block">
+                      <Button fullWidth className="flex justify-center items-center gap-2">
+                        <ExternalLink size={20} /> {t('projectModal.liveDemo')}
+                      </Button>
+                    </a>
+                    <a href={project.links.repo} target="_blank" rel="noopener noreferrer" className="block">
+                      <Button variant="secondary" fullWidth className="flex justify-center items-center gap-2">
+                        <Github size={20} /> {t('projectModal.source')}
+                      </Button>
+                    </a>
+                  </div>
+                ) : (project.links.demo && project.links.demo.trim() !== '#') ? (
+                  // Only demo link available
+                  <div className="grid grid-cols-2 gap-4">
+                    <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="block">
+                      <Button fullWidth className="flex justify-center items-center gap-2">
+                        <ExternalLink size={20} /> {t('projectModal.liveDemo')}
+                      </Button>
+                    </a>
+                    <Button 
+                      variant="secondary" 
+                      fullWidth 
+                      className="flex justify-center items-center gap-2"
+                      onClick={() => {
+                        onClose();
+                        setTimeout(() => {
+                          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                        }, 300);
+                      }}
+                    >
+                      <ExternalLink size={20} /> {t('projectModal.requestDemo')}
+                    </Button>
+                  </div>
+                ) : (project.links.repo && project.links.repo.trim() !== '#') ? (
+                  // Only repo link available
+                  <div className="grid grid-cols-2 gap-4">
+                    <Button 
+                      fullWidth 
+                      className="flex justify-center items-center gap-2"
+                      onClick={() => {
+                        onClose();
+                        setTimeout(() => {
+                          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                        }, 300);
+                      }}
+                    >
+                      <ExternalLink size={20} /> {t('projectModal.requestDemo')}
+                    </Button>
+                    <a href={project.links.repo} target="_blank" rel="noopener noreferrer" className="block">
+                      <Button variant="secondary" fullWidth className="flex justify-center items-center gap-2">
+                        <Github size={20} /> {t('projectModal.source')}
+                      </Button>
+                    </a>
+                  </div>
+                ) : (
+                  // No valid links - show only request demo button (centered)
+                  <div className="flex justify-center">
+                    <Button 
+                      className="flex justify-center items-center gap-2 px-8"
+                      onClick={() => {
+                        onClose();
+                        setTimeout(() => {
+                          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                        }, 300);
+                      }}
+                    >
+                      <ExternalLink size={20} /> {t('projectModal.requestDemo')}
+                    </Button>
+                  </div>
+                )}
               </div>
             </div>
           </div>

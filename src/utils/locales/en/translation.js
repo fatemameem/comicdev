@@ -29,34 +29,79 @@ export default {
       "education.degree.bsc": "B.Sc. Computer Science and Engineering",
       "education.school.brac": "BRAC University",
       "education.details.brac":
-        "Focus on Human-Computer Interaction & Web Technologies. Graduated Summa Cum Laude.",
+        "Built a strong foundation in algorithms, software engineering, and cloud systems, with machine-learning research in personalized recommendations.",
       "education.degree.meng": "M.Engg. Information Systems Security",
       "education.school.concordia": "Concordia University",
       "education.details.concordia":
-        "Intensive 12-week program covering React, Node.js, and Cloud Infrastructure.",
+        "Specialized in operating system security, network architecture, malware defense, and secure systems integration.",
 
       // Experience
+      "experience.title": "Chapter 2: Career Adventures",
+      "experience.readMore": "Read More",
       "experience.role.frontend": "Frontend Developer",
       "experience.company.bevy": "Bevy Commerce",
       "experience.desc.bevy":
         "Leading the UI redesign initiative. Improved performance by 40% through code splitting and asset optimization. Mentoring junior developers.",
+      "experience.bevy.resp1":
+        "Led UI/UX redesign projects for e-commerce platforms using React and Next.js",
+      "experience.bevy.resp2":
+        "Implemented performance optimizations including code splitting and lazy loading",
+      "experience.bevy.resp3":
+        "Collaborated with backend teams to integrate Shopify APIs and custom solutions",
+      "experience.bevy.resp4":
+        "Mentored junior developers and conducted code reviews",
+      "experience.bevy.achievement1":
+        "Improved website load time by 40% through asset optimization and code splitting",
+      "experience.bevy.achievement2":
+        "Successfully launched 5+ client projects on schedule with zero critical bugs",
+      "experience.bevy.achievement3":
+        "Implemented responsive design patterns that increased mobile conversion by 25%",
+      "experience.bevy.project1": "E-commerce Platform Redesign",
+      "experience.bevy.project2": "Shopify Theme Development",
+
       "experience.role.webdev": "Web Developer (Volunteer)",
       "experience.company.technest": "TECHNEST Canada",
       "experience.desc.technest":
-        "Built responsive websites for 20+ clients. Collaborated closely with designers to implement pixel-perfect animations.",
+        "Built responsive websites for 100+ clients. Collaborated closely with designers to implement pixel-perfect animations.",
+      "experience.technest.resp1":
+        "Develop and maintain responsive web applications using Next.js",
+      "experience.technest.resp2":
+        "Create accessible and performant UI components following WCAG guidelines",
+      "experience.technest.resp3":
+        "Implement complex animations and interactions using GSAP",
+      "experience.technest.resp4":
+        "Integrate Google Sheets API and custom CMS solutions for content management",
+      "experience.technest.achievement1":
+        "Built and deployed 100+ client websites with 100% satisfaction rate",
+      "experience.technest.achievement2":
+        "Implemented accessibility features achieving WCAG 2.1 AA compliance",
+      "experience.technest.achievement3":
+        "Created reusable component library reducing development time by 30%",
+      "experience.technest.project1": "Tech-Nest Canada Platform",
+
+      // Experience Modal
+      "experienceModal.closeModal": "Close Modal",
+      "experienceModal.responsibilities": "Key Responsibilities",
+      "experienceModal.achievements": "Major Achievements",
+      "experienceModal.techStack": "Technologies Used",
+      "experienceModal.relatedProjects": "Related Projects",
+      "experienceModal.close": "Close",
 
       // Additional Experience
       "additionalExperience.title": "Chapter 3: Additional Experience",
-      "additionalExperience.role.customerService": "Customer Service Representative - Rogers & Fido",
+      "additionalExperience.role.customerService":
+        "Customer Service Representative - Rogers & Fido",
       "additionalExperience.company.ioSolutions": "IO Solutions Inc",
       "additionalExperience.desc.ioSolutions":
         "Experienced Customer Service Representative capable of answering inquiries, assuring satisfaction, and fulfilling 100% performance targets with a proven track record of efficient communication, multitasking, and building client loyalty.",
       "additionalExperience.role.gradAmbassador": "Graduate Student Ambassador",
-      "additionalExperience.company.gradStudies": "School of Graduate Studies, Concordia University",
+      "additionalExperience.company.gradStudies":
+        "School of Graduate Studies, Concordia University",
       "additionalExperience.desc.gradAmbassador":
         "Represented the graduate student community and promoted academic programs while providing guidance and support to prospective and current graduate students.",
       "additionalExperience.role.examInvigilator": "Exam Invigilator",
-      "additionalExperience.company.examOffice": "Office of Examinations, Concordia University",
+      "additionalExperience.company.examOffice":
+        "Office of Examinations, Concordia University",
       "additionalExperience.desc.examInvigilator":
         "Supervised academic examinations ensuring integrity and adherence to university policies while providing assistance to students during examination periods.",
 
@@ -192,7 +237,8 @@ export default {
       // Voluntary
 
       "voluntary.bdgsavp.role": "Vice President of Communications",
-      "voluntary.bdgsavp.org": "Bangladesh Graduate Student Association, Concordia University",
+      "voluntary.bdgsavp.org":
+        "Bangladesh Graduate Student Association, Concordia University",
       "voluntary.bdgsavp.desc":
         "Led communication initiatives and coordinated outreach activities to strengthen engagement among graduate students and promote association events and programs.",
 
@@ -269,6 +315,7 @@ export default {
       "projectModal.theSolution": "The Solution",
       "projectModal.liveDemo": "Live Demo",
       "projectModal.source": "Source",
+      "projectModal.requestDemo": "Request a Demo",
       "projectModal.closeModal": "Close Modal",
 
       // Volunteer Section
