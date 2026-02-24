@@ -78,7 +78,7 @@ export const Contact: React.FC = () => {
                   <label className="block font-comic font-bold mb-1">{t('contact.message')}</label>
                   <textarea rows={4} className="w-full border-2 border-comic-black dark:border-comic-gray p-3 font-body rounded-sm bg-white dark:bg-comic-dark-bg text-comic-black dark:text-comic-dark-text focus:outline-none focus:shadow-comic-sm dark:focus:shadow-comic-dark-sm focus:bg-yellow-50 dark:focus:bg-gray-800 transition-all" placeholder={t('contact.messagePlaceholder')} id="message" name="message"></textarea>
                 </div>
-                <Button type="submit" fullWidth className="flex justify-center items-center gap-2">
+                <Button type="submit" fullWidth className="flex justify-center items-center gap-2 cursor-pointer">
                   {t('contact.sendIt')} <Send size={18} />
                 </Button>
               </form>
@@ -113,7 +113,7 @@ export const Contact: React.FC = () => {
             </div>
 
           </div>
-          <img src="/snoopy/contact.png"  alt="Snoopy Background" className="hidden md:block absolute w-52 h-52 bottom-0 right-5 opacity-90 transform scale-x-[-1] z-0" />
+          {/* <img src="/snoopy/contact.png"  alt="Snoopy Background" className="hidden md:block absolute w-52 h-52 bottom-0 right-5 opacity-90 transform scale-x-[-1] z-0" /> */}
         </div>
       </section>
     </>

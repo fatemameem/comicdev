@@ -108,7 +108,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   <img 
                     src={project.screenshots[currentImageIndex]} 
                     alt={`Screenshot ${currentImageIndex + 1}`}
-                    className={`w-full h-full object-cover transition-opacity duration-300 ${isAnimating ? 'opacity-80' : 'opacity-100'}`}
+                    className={`w-full h-full object-fit transition-opacity duration-300 ${isAnimating ? 'opacity-80' : 'opacity-100'}`}
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-gray-400">{t('projectModal.noPreview')}</div>
@@ -202,12 +202,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   // Both links available - show both buttons
                   <div className="grid grid-cols-2 gap-4">
                     <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="block">
-                      <Button fullWidth className="flex justify-center items-center gap-2">
+                      <Button fullWidth className="flex justify-center items-center gap-2 cursor-pointer">
                         <ExternalLink size={20} /> {t('projectModal.liveDemo')}
                       </Button>
                     </a>
                     <a href={project.links.repo} target="_blank" rel="noopener noreferrer" className="block">
-                      <Button variant="secondary" fullWidth className="flex justify-center items-center gap-2">
+                      <Button variant="secondary" fullWidth className="flex justify-center items-center gap-2 cursor-pointer">
                         <Github size={20} /> {t('projectModal.source')}
                       </Button>
                     </a>
@@ -216,14 +216,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   // Only demo link available
                   <div className="grid grid-cols-2 gap-4">
                     <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="block">
-                      <Button fullWidth className="flex justify-center items-center gap-2">
+                      <Button fullWidth className="flex justify-center items-center gap-2 cursor-pointer">
                         <ExternalLink size={20} /> {t('projectModal.liveDemo')}
                       </Button>
                     </a>
                     <Button 
                       variant="secondary" 
                       fullWidth 
-                      className="flex justify-center items-center gap-2"
+                      className="flex justify-center items-center gap-2 cursor-pointer"
                       onClick={() => {
                         onClose();
                         setTimeout(() => {
@@ -239,7 +239,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   <div className="grid grid-cols-2 gap-4">
                     <Button 
                       fullWidth 
-                      className="flex justify-center items-center gap-2"
+                      className="flex justify-center items-center gap-2 cursor-pointer"
                       onClick={() => {
                         onClose();
                         setTimeout(() => {
@@ -250,7 +250,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                       <ExternalLink size={20} /> {t('projectModal.requestDemo')}
                     </Button>
                     <a href={project.links.repo} target="_blank" rel="noopener noreferrer" className="block">
-                      <Button variant="secondary" fullWidth className="flex justify-center items-center gap-2">
+                      <Button variant="secondary" fullWidth className="flex justify-center items-center gap-2 cursor-pointer">
                         <Github size={20} /> {t('projectModal.source')}
                       </Button>
                     </a>
@@ -259,7 +259,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   // No valid links - show only request demo button (centered)
                   <div className="flex justify-center">
                     <Button 
-                      className="flex justify-center items-center gap-2 px-8"
+                      className="flex justify-center items-center gap-2 px-8 cursor-pointer"
                       onClick={() => {
                         onClose();
                         setTimeout(() => {

@@ -28,7 +28,7 @@ export const Education: React.FC = () => {
           ))}
         </div>
         {/* <Footprints className="py-8 text-comic-black dark:text-comic-yellow" /> */}
-        <img src="/snoopy/originn-bg.png"  alt="Snoopy Background" className="hidden md:block absolute w-52 h-40 -bottom-20 right-0 opacity-90 z-0" />
+        {/* <img src="/snoopy/originn-bg.png"  alt="Snoopy Background" className="hidden md:block absolute w-52 h-40 -bottom-20 right-0 opacity-90 z-0" /> */}
       </div>
     </section>
   );

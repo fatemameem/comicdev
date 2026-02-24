@@ -215,7 +215,7 @@ export const PROJECTS: ProjectItem[] = [
     techStack: ["Machine Learning", "EEG Processing", "Random Forest", "XGBoost"],
     links: { demo: "#", repo: "#" },
     screenshots: [
-      "https://picsum.photos/800/450?random=10"
+      "/screenshots/meal-ss1.webp",
     ]
   },
   {
