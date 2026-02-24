@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# Comic-Style Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive portfolio website built with React, TypeScript, and Vite, featuring a unique comic book aesthetic and bilingual support.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Comic Book Theme**: Custom comic-style design with speech bubbles, panels, and animations
+- **Bilingual Support**: Full English and French translations using react-i18next
+- **Interactive Modals**: Detailed project and experience modals with hover effects
+- **Dark/Light Mode**: Seamless theme switching with persistent preferences
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Modern Tech Stack**: Built with React, TypeScript, Tailwind CSS, and Vite
 
-## React Compiler
+## 🚀 Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+2. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+3. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎨 Sections
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Hero**: Animated introduction with comic-style elements
+- **About**: Personal story with interactive timeline
+- **Experience**: Professional experience with detailed modals
+- **Projects**: Portfolio projects with live demos and source code
+- **Skills**: Interactive skill cards with hover effects
+- **Contact**: Direct contact form integration
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **Animation**: Framer Motion, custom CSS animations
+- **Internationalization**: react-i18next
+- **Build Tool**: Vite
+- **Icons**: Lucide React
+- **Deployment**: Ready for Netlify/Vercel
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📱 Responsive
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Fully responsive design optimized for:
+- Desktop (1024px+)
+- Tablet (768px - 1023px)
+- Mobile (< 768px)
+
+---
+
+Built with ❤️ and lots of ☕
