@@ -6,7 +6,10 @@ import { useTranslation } from 'react-i18next';
 import TextType from '../ui/TextType';
 
 export const Hero: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isFrench = (i18n.resolvedLanguage || i18n.language || '').toLowerCase().startsWith('fr');
+  const resumeHref = isFrench ? '/Fatema_Ahsan_Meem_Resume--FR.pdf' : '/Fatema_Ahsan_Meem_Resume.pdf';
+
   const scrollToProjects = () => {
     const el = document.getElementById('projects');
     if(el) window.scrollTo({ top: el.offsetTop - 80, behavior: 'smooth' });
@@ -65,7 +68,7 @@ export const Hero: React.FC = () => {
             <Button variant="secondary" onClick={scrollToContact} className="flex items-center gap-2 cursor-pointer">
               {t('hero.letsTalk')}
             </Button>
-            <a title='projects' href="/Fatema_Ahsan_Meem_Resume.pdf" target='_blank' className="block">
+            <a title='projects' href={resumeHref} target='_blank' rel="noopener noreferrer" className="block">
               <Button variant="outline" className="flex items-center gap-2 cursor-pointer" title="Download Resume">
                 <Download size={20} />
               </Button>
