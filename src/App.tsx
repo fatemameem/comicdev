@@ -6,7 +6,6 @@ import { Education } from './components/sections/Education'
 import { Experience } from './components/sections/Experience'
 import { AdditionalExperience } from './components/sections/AdditionalExperience'
 import { Projects } from './components/sections/Projects'
-import { Hackathons } from './components/sections/Hackathons'
 import { Voluntary } from './components/sections/Volunteer'
 import { Contact } from './components/sections/Contact'
 
@@ -20,7 +19,7 @@ function App() {
         <Education />
         <Experience />
         <Projects/>
-        <Hackathons />
+        {/* <Hackathons /> */}
         <AdditionalExperience />
         <Voluntary/>
         <Contact/>

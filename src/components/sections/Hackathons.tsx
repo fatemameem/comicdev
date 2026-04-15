@@ -14,15 +14,16 @@ export const Hackathons: React.FC = () => {
   return (
     <section
       id="hackathons"
-      className="py-16 px-4 md:px-8 text-comic-black dark:text-comic-dark-text bg-comic-paper dark:bg-comic-dark-bg"
+      className=" px-4 md:px-8 text-comic-black dark:text-comic-dark-text bg-comic-paper dark:bg-comic-dark-bg dark:border-comic-gray"
     >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="mb-12 flex items-center gap-4">
           <div className="bg-comic-yellow p-3 border-2 border-comic-black dark:border-comic-gray shadow-comic dark:shadow-comic-dark rounded-full text-comic-black">
-            <Trophy size={32} />
+            <Trophy size={30} />
           </div>
-          <h2 className="font-comic font-bold text-4xl">{t('hackathons.title')}</h2>
+          <h2 className="font-comic font-bold text-3xl text-comic-black dark:text-white transform -rotate-1">{t('hackathons.title')}</h2>
+          <div className="flex-1 h-px bg-comic-black dark:bg-gray-600 border-b border-dashed border-gray-400"></div>
         </div>
 
         {/* Cards */}

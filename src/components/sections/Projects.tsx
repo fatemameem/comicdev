@@ -5,6 +5,7 @@ import { ComicPanel } from '../ui/ComicPanel';
 import { TechBadge } from '../ui/TechBadge';
 import { ProjectModal } from '../ui/ProjectModal';
 import { useTranslation } from 'react-i18next';
+import { Hackathons } from './Hackathons';
 
 // Helper function to map category literals to translation keys
 const getCategoryTranslationKey = (category: string): string => {
@@ -179,6 +180,7 @@ export const Projects: React.FC = () => {
         )}
 
       </div>
+      <Hackathons/>
 
       {/* Modal Overlay */}
       {selectedProject && (
