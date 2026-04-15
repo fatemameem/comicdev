@@ -25,6 +25,17 @@ export default {
       "nav.more": "Plus",
       "nav.contact": "Contact",
 
+      // Hackathons
+      "hackathons.title": "Chroniques des Hackathons",
+      "hackathons.subtitle": "Compétition, création et victoire sous pression.",
+      "hackathons.event1.hackathonName": "JACHacks 2026",
+      "hackathons.event1.projectName": "WhereTo",
+      "hackathons.event1.date": "Avril 2026",
+      "hackathons.event1.award": "Gagnant — Mini-défi ITS",
+      "hackathons.repoLink": "GitHub",
+      "hackathons.devpostLink": "Devpost",
+      "hackathons.projectLabel": "Projet",
+
       // Education
       "education.degree.bsc": "B.Sc. Informatique et Génie Logiciel",
       "education.school.brac": "Université BRAC",
@@ -183,6 +194,16 @@ export default {
       "projects.marvelhangman.longDescription":
         "Marvel Hangman est un jeu de navigateur léger où les joueurs devinent les noms de personnages Marvel populaires lettre par lettre avant d'épuiser leurs tentatives. Construit avec Vanilla JavaScript, HTML et CSS, le jeu offre un gameplay réactif, un rendu dynamique des mots et des commentaires interactifs pour maintenir l'engagement des utilisateurs tout en mettant en valeur les compétences de développement frontend de base sans dépendre de frameworks.",
 
+      "projects.whereto.title": "WhereTo — Suivi d'Occupation du Campus",
+      "projects.whereto.problem":
+        "Les étudiant·e·s du Collège John Abbott perdent du temps à chercher une place libre d'étude de salle en salle, sans savoir quelles salles sont occupées avant d'y arriver.",
+      "projects.whereto.idea":
+        "Utiliser les comptages de clients connectés aux points d'accès Wi-Fi UniFi du campus comme indicateur fiable d'occupation des salles en temps réel.",
+      "projects.whereto.solution":
+        "Une application web et un PWA installable qui transforment les données Wi-Fi brutes en carte thermique interactive du plan d'étage, graphiques d'occupation historiques et recommandeur de place d'étude basé sur l'IA — mis à jour toutes les 5 minutes.",
+      "projects.whereto.longDescription":
+        "Réalisé dans le cadre du ITS Mini Challenge à JACHacks 2026, WhereTo transforme les données d'occupation du campus en outil d'analyse, tout en aidant concrètement les étudiants à repérer des espaces d'étude disponibles. Le serveur interroge le contrôleur UniFi du campus toutes les 5 minutes via une tâche cron, normalise les données par salle et stocke les instantanés dans une base de données SQLite. L'interface React affiche une carte thermique Leaflet du plan d'étage codée par couleur selon l'affluence, des graphiques chronologiques Recharts sur 1h / 6h / 24h / 7j / 30j, et un recommandeur de place d'étude alimenté par Google Gemini et Claude qui fournit une suggestion en langage naturel basée sur les données d'occupation en direct. L'application propose des vues selon le rôle — un chercheur de place mobile pour les étudiant·e·s et un tableau de bord analytique complet pour les admin·s — et est distribuée en tant que PWA installable avec support hors ligne via mise en cache du service worker.",
+
       // =========================
       // FEATURES
       // =========================
@@ -194,6 +215,17 @@ export default {
       "features.responsiveGameplay": "Gameplay réactif sur tous les appareils",
       "features.vanillaJsImplementation":
         "Construit purement avec Vanilla JavaScript, HTML et CSS",
+
+      "features.liveHeatmaps":
+        "Carte thermique interactive du plan d'étage avec code couleur de l'affluence en temps réel",
+      "features.historicalCharts":
+        "Graphiques de tendance d'occupation sur 1h, 6h, 24h, 7j et 30j",
+      "features.aiStudyRecommender":
+        "Recommandeur de place d'étude propulsé par l'IA via Google Gemini et Claude",
+      "features.roleBasedUI":
+        "Interface selon le rôle — chercheur de place mobile pour étudiant·e·s et tableau de bord admin",
+      "features.pwaInstallable":
+        "PWA installable avec mise en cache hors ligne via service worker — fonctionne sur tous les téléphones",
       "features.roleBasedModeration":
         "Soumission de contenu basée sur les rôles et modération",
       "features.adminDashboard":
@@ -275,6 +307,7 @@ export default {
       "period.2023-2024": "2023 - 2024",
       "period.2023-2025": "2023 - 2025",
       "period.2024Present": "2024 - PRÉSENT",
+      "period.april2026": "Avril 2026",
 
       // Hero Section
       "hero.welcomeMessage": "Salut ! Bienvenue sur mon portfolio.",
