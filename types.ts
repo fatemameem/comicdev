@@ -58,6 +58,19 @@ export interface VoluntaryItem {
   description: string;
 }
 
+export interface HackathonItem {
+  id: number;
+  hackathonName: string;
+  projectName: string;
+  date: string;
+  award?: string;
+  screenshots?: string[];
+  links: {
+    devpost: string;
+    repo: string;
+  };
+}
+
 export interface SocialLink {
   platform: string;
   url: string;

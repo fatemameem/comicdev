@@ -1,12 +1,11 @@
-import type { ExperienceItem, EducationItem, ProjectItem, VoluntaryItem, NavItem } from '../../types';
+import type { ExperienceItem, EducationItem, ProjectItem, VoluntaryItem, NavItem, HackathonItem } from '../../types';
 
 export const NAV_ITEMS: NavItem[] = [
   { id: 'about', label: 'nav.about' },
   { id: 'education', label: 'nav.education' },
   { id: 'experience', label: 'nav.work' },
   { id: 'projects', label: 'nav.projects' },
-  { id: 'additional', label: 'nav.more' },
-  { id: 'voluntary', label: 'nav.voluntary' },
+  { id: 'hackathons', label: 'nav.more' },
   { id: 'contact', label: 'nav.contact' },
 ];
 
@@ -264,6 +263,32 @@ export const PROJECTS: ProjectItem[] = [
       "/screenshots/hangman-ss1.webp",
       "/screenshots/hangman-ss3.webp"
     ]
+  },
+  {
+    id: 7,
+    title: "projects.whereto.title",
+    category: "Developer",
+    issueNumber: "#07",
+    problem: "projects.whereto.problem",
+    idea: "projects.whereto.idea",
+    solution: "projects.whereto.solution",
+    longDescription: "projects.whereto.longDescription",
+    features: [
+      "features.liveHeatmaps",
+      "features.historicalCharts",
+      "features.aiStudyRecommender",
+      "features.roleBasedUI",
+      "features.pwaInstallable"
+    ],
+    techStack: ["React 19", "TypeScript", "Node.js", "Express", "SQLite", "Leaflet", "Recharts", "Google Gemini", "Claude AI", "PWA", "Tailwind CSS", "Vite"],
+    links: { demo: "https://devpost.com/software/whereto-26ml5q", repo: "https://github.com/Iktisad/JACHACKS_2026_Where2" },
+    screenshots: [
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/561/779/datas/original.jpeg",
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/561/781/datas/original.jpeg",
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/561/782/datas/original.jpeg",
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/561/783/datas/original.jpeg",
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/561/784/datas/original.jpeg"
+    ]
   }
 ];
 
@@ -292,4 +317,25 @@ export const ADDITIONAL = [
   "additional.speaking",
   "additional.writing",
   "additional.design"
+];
+
+export const HACKATHONS: HackathonItem[] = [
+  {
+    id: 1,
+    hackathonName: "hackathons.event1.hackathonName",
+    projectName: "hackathons.event1.projectName",
+    date: "hackathons.event1.date",
+    award: "hackathons.event1.award",
+    screenshots: [
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/561/779/datas/original.jpeg",
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/561/781/datas/original.jpeg",
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/561/782/datas/original.jpeg",
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/561/783/datas/original.jpeg",
+      "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/561/784/datas/original.jpeg"
+    ],
+    links: {
+      devpost: "https://devpost.com/software/whereto-26ml5q",
+      repo: "https://github.com/Iktisad/JACHACKS_2026_Where2"
+    }
+  }
 ];
