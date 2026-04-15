@@ -25,6 +25,17 @@ export default {
       "nav.more": "More",
       "nav.contact": "Contact",
 
+      // Hackathons
+      "hackathons.title": "Hackathon Chronicles",
+      "hackathons.subtitle": "Competing, building, and winning under pressure.",
+      "hackathons.event1.hackathonName": "JACHacks 2026",
+      "hackathons.event1.projectName": "WhereTo",
+      "hackathons.event1.date": "April 2026",
+      "hackathons.event1.award": "Winner — ITS Mini Challenge",
+      "hackathons.repoLink": "GitHub",
+      "hackathons.devpostLink": "Devpost",
+      "hackathons.projectLabel": "Project",
+
       // Education
       "education.degree.bsc": "B.Sc. Computer Science and Engineering",
       "education.school.brac": "BRAC University",
@@ -181,6 +192,16 @@ export default {
       "projects.marvelhangman.longDescription":
         "Marvel Hangman is a lightweight browser game where players guess the names of popular Marvel characters letter by letter before exhausting attempts. Built using Vanilla JavaScript, HTML, and CSS, the game provides responsive gameplay, dynamic word rendering, and interactive feedback to keep users engaged while showcasing core frontend development skills without relying on frameworks.",
 
+      "projects.whereto.title": "WhereTo — Campus Occupancy Tracker",
+      "projects.whereto.problem":
+        "Students at John Abbott College waste time wandering between buildings looking for a free study spot, with no way to know which rooms are occupied before they arrive.",
+      "projects.whereto.idea":
+        "Use live UniFi Wi-Fi access point client counts — already available on the JAC campus controller — as a reliable real-time proxy for room occupancy.",
+      "projects.whereto.solution":
+        "A full-stack web app and installable PWA that transforms raw Wi-Fi data into an interactive floor-plan heatmap, historical occupancy charts, and an AI-powered study spot recommender — all updated every 5 minutes.",
+      "projects.whereto.longDescription":
+        "Created for the ITS Mini Challenge at JACHacks 2026, WhereTo turns live campus occupancy data into both an analytics tool and a practical way for students to find available study spaces. The backend polls the campus UniFi controller every 5 minutes via a cron job, normalises access point readings by room, and stores snapshots in a SQLite database. The React frontend displays a Leaflet floor-plan heatmap colour-coded by busyness, Recharts time-series graphs across 1h / 6h / 24h / 7d / 30d ranges, and an AI study spot recommender powered by both Google Gemini and Claude that returns a plain-English suggestion based on live occupancy data. The app features role-based views — a mobile-friendly space finder for students and a full analytics dashboard for admins — and ships as a fully installable PWA with offline support via service worker caching.",
+
       // =========================
       // FEATURES
       // =========================
@@ -192,6 +213,17 @@ export default {
       "features.responsiveGameplay": "Responsive gameplay across devices",
       "features.vanillaJsImplementation":
         "Built purely with Vanilla JavaScript, HTML, and CSS",
+
+      "features.liveHeatmaps":
+        "Interactive floor-plan heatmap with real-time colour-coded room busyness",
+      "features.historicalCharts":
+        "Occupancy trend charts across 1h, 6h, 24h, 7d, and 30d time ranges",
+      "features.aiStudyRecommender":
+        "AI-powered study spot recommendation using Google Gemini & Claude",
+      "features.roleBasedUI":
+        "Role-based UI — mobile student space finder and full admin analytics dashboard",
+      "features.pwaInstallable":
+        "Installable PWA with service worker offline caching — works on any phone",
       "features.roleBasedModeration":
         "Role-based content submission and moderation",
       "features.adminDashboard": "Admin dashboard with content management",
@@ -267,6 +299,7 @@ export default {
       "period.2023-2024": "2023 - 2024",
       "period.2023-2025": "2023 - 2025",
       "period.2024Present": "2024 - PRESENT",
+      "period.april2026": "April 2026",
 
       // Hero Section
       "hero.welcomeMessage": "Hi there! Welcome to my portfolio.",
